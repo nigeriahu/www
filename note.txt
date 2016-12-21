@@ -1,0 +1,228 @@
+2016-11-15
+    移动端布局特别要注意box的类型要是border-box(这点bootstrap已经做了)并且设置overflow: hidden可以防止一些不定因素打乱布局;宽度用百分比来写,一些固定宽度的地方等大的布局写完了在调试,单位的话最好选rem,rem是根据根元素html的font-size来确定的;如果页面不是要做成匹配很多设备的话也可用px,使用了bootstrap的栅格系统来进行布局,找到一个子级是自适应宽高的时候居中布局的办法给父级设置position: relative;子级设置position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);使用绝对布局不影响其他的元素很实用.
+
+进度条：设置input[type=range]::-webkit-slider-thumb的背景图片来达到设计的效果.
+js的随机排序.
+
+深入理解Bootstrap
+
+2016-12-5
+vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
+vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。
+vmin：vw和vh中较小的那个。
+vmax：vw和vh中较大的那个。
+
+让图片填充div用：
+filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+-moz-background-size:100% 100%; 
+background-size:100% 100%;
+2016-12-6
+CSS
+小三角的做法：布局div，并命名id="tri"，用CSS来控制div，在style里面，使用border属性对div进行控制，
+#tri{
+width: 0px;
+height: 0px;
+   border-top: 400px solid red;
+   border-right: 400px solid blue;
+   border-bottom: 400px solid green;
+   border-left: 400px solid yellow;
+}
+------------------
+display的用法与分类
+inline-block的这个属性值的作用，它是将元素变为能够设置宽高的行元素，如果一个元素的display属性值被设置成为inline-block，那么你就可以对这个元素设置宽和高.
+none	此元素不会被显示。
+block	此元素将显示为块级元素，此元素前后会带有换行符。
+inline	默认。此元素会被显示为内联元素，元素前后没有换行符。
+inline-block	行内块元素。（CSS2.1 新增的值）
+list-item	此元素会作为列表显示。
+
+box：将对象作为弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）
+inline-box：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）
+flexbox：将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）
+inline-flexbox：将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）
+flex：将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3）
+inline-flex：将对象作为内联块级弹性伸缩盒显示。
+------------------
+去除display间隙：父级font-size:0；使用margin负值：
+
+------------------
+【注意】div的长宽设为0，border为边框，会看到如下四个三角状的图形。
+JS
+input[type="range"]部分添加JS动画效果，同时同步range和上方输入数字的input框
+input框要引用onkeyup，同步函数才会执行，滑块才可以和输入框的数字同步
+
+12-9
+如果你对自己还有更高的要求，可以研究开发者工具的“源码(Sources)”，掌握断点、单步执行等高级调试技巧
+NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示
+唯一能判断NaN的方法是通过isNaN()函数   isNaN(NaN); // true
+avaScript的设计者希望用null表示一个空的值，而undefined表示值未定义。事实证明，这并没有什么卵用，区分两者的意义不大。大多数情况下，我们都应该用null。undefined仅仅在判断函数参数是否传递的情况下有用。
+Map是一组键值对的结构，具有极快的查找速度。
+12-12
+字面量 （literal）可以直接在js代码中写出来的数据。
+对象（object）是一种非常重要的数据类型，对象是自包含的数据集合，包含在对象里的数据集合可以通过两种形式访问——属性（property）和方法（method）：属性是属于某个特定对象的变量；方法是只有某个特定对象才能调用的函数。属性和方法都使用”点“语法来访问。
+实例（instance）是对象的具体个体。为给定对象创建一个新实例需要使用new关键字。用户定义对象（user-defined-object），可以拿来就用的对象称为内建对象（native-object）如 Array（）；Array对象有length属性。
+web应用环境即浏览器提供的一些不同于js语言的内建对象，一些已经预先定义好的其他对象，即浏览器提供的预定义对象被称为宿主对象（host object）；包括document、Form、Image和Element等。
+DOM的威力：对页面内容进行刷新却不需要在浏览器里刷新页面，先加载文档的静态内容，再动态刷新，动态刷新不影响文档的静态内容。
+Javascript中不允许变量名中包含空格或标点附后（$除外）；变量名中允许包含字母、数字、美元符号和下划线（第一个字符不允许是数字）；为了便于阅读，可以在变量名中适当位置插入下划线，另一种方式是使用驼峰式（camel case），删除中间的空白、下划线，后面的每个新单词改用大喜字母开头。通常驼峰格式是函数名、方法名和对象属性名命名的首选格式。
+generator（生成器）一个generator看上去像一个函数，但可以返回多次。
+正则表达式是一种用来匹配字符串的强有力的武器。它的设计思想是用一种描述性的语言来给字符串定义一个规则，凡是符合规则的字符串，我们就认为它“匹配”了，否则，该字符串就是不合法的。
+在正则表达式中，如果直接给出字符，就是精确匹配。用\d可以匹配一个数字，\w可以匹配一个字母或数字，.可以匹配任意字符，^表示行的开头，^\d表示必须以数字开头。
+
+$表示行的结束，\d$表示必须以数字结束。
+
+AJAX不是JavaScript的规范，它只是一个哥们“发明”的缩写：Asynchronous JavaScript and XML，意思就是用JavaScript执行异步网络请求。
+在现代浏览器上写AJAX主要依靠XMLHttpRequest对象。
+
+jQuery能帮我们干这些事情：
+消除浏览器差异：你不需要自己写冗长的代码来针对不同的浏览器来绑定事件，编写AJAX等代码；
+简洁的操作DOM的方法：写$('#test')肯定比document.getElementById('test')来得简洁；
+轻松实现动画、修改CSS等各种操作。
+jQuery的理念“Write Less, Do More“，让你写更少的代码，完成更多的工作！
+使用jQuery只需要在页面的<head>引入jQuery文件即可：<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+$是著名的jQuery符号。实际上，jQuery把所有功能全部封装在一个全局变量jQuery中，而$也是一个合法的变量名，它是变量jQuery的别名：
+window.jQuery; // jQuery(selector, context)
+window.$; // jQuery(selector, context)
+$ === jQuery; // true
+typeof($); // 'function'
+DOM操作中我们经常使用的代码需要递归查找所有子节点    后者；$(#‘ID’）；=document.getElementById（‘ID’）；jQuery的选择器就是帮助我们快速定位到一个或多个DOM节点。
+getElementById(): 获取有指定惟一ID属性值文档中的元素
+getElementsByName(name): 返回的是数组
+getElementsByTagName(): 返回具有指定标签名的元素子元素集合
+getAttribute(): 返回指定属性名的属性值
+document.getElementsByTagName("a")[0].getAttribute("target");
+setAttribute(): 添加指定的属性，并为其赋指定的值。
+document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
+节点属性:
+节点名称(只读):nodeName
+节点值: nodeValue
+节点类型(只读):nodeType
+子节点：
+ele.childNodes 返回数组
+firstChild
+lastChild
+父节点
+parentNode 只有一个
+兄弟节点
+nextSibling 某节点之后紧跟的节点
+previousSibling
+插入节点
+appendChild() 插入在最后
+insertBefore(newnode,node)在node节点之前
+删除节点
+removeChild(node) 成功返回被删除的节点 失败返回null
+替换元素节点
+replaceChild(newnode,oldnode) 实现子节点对象的替换
+创建元素节点
+createElement()
+创建文本节点
+createTextNode()
+复制节点
+需要被复制的节点.cloneNode(true/false)
+true复制当前节点极其所以子节点，false仅复制当前节点
+
+在Node上运行的JavaScript相比其他后端开发语言有何优势？
+最大的优势是借助JavaScript天生的事件驱动机制加V8高性能引擎，使编写高性能Web服务轻而易举。
+REST（Representational State Transfer）
+如果一个URL返回的不是HTML，而是机器能直接解析的数据，这个URL就可以看成是一个Web API。把网页视为一种客户端，是REST架构可扩展的一个关键。
+如果这个DOM节点是空的，例如，<div></div>，那么，直接使用innerHTML = '<span>child</span>'就可以修改DOM节点的内容，相当于“插入”了新的DOM节点。
+如果这个DOM节点不是空的，那就不能这么做，因为innerHTML会直接替换掉原来的所有子节点。
+有两个办法可以插入新的节点。一个是使用appendChild，把一个子节点添加到父节点的最后一个子节点。
+如果在JavaScript文件开头写上'use strict';，那么Node在执行该JavaScript时将使用严格模式。
+
+16-12-13
+编程语言JavaScript是ECMAScript的实现和扩展，由ECMA（一个类似W3C的标准组织）参与进行标准化。ECMAScript定义了：
+http://es6.ruanyifeng.com
+语言语法 – 语法解析规则、关键字、语句、声明、运算符等。
+类型 – 布尔型、数字、字符串、对象等。
+原型和继承
+内建对象和函数的标准库 – JSON、Math、数组方法、对象自省方法等。
+Math.random（）；输出0-1之间的任意小数。
+Array 对象用于在单个的变量中存储多个值；在js-2的localStorage中要用到。
+用localStorage来存储数据的一些经验 
+localStorage存储方法
+localStorage.name = localStorage["name"]='vanida'；localStorage.setItem("name","vanida");//这三种设置值方式是一样的；
+localStorage获取值方法
+var name = localStorage["name"] = localStorage.name＝ localStorage.getItem("name");//这三种获取值方式是一样的；
+localStorage清值方法
+localStorage.removeItem("name");或者localStorage.name＝'';//清除name的值
+localStorage只能存储字符串，如果需要存储对象，首先要转化为字符串。利用JSON.stringify()；然后取出person的对象你可以用JSON.parse();
+本地存储外，除了localStorage，还有sessionStorage.
+（1）localStorage和sessionStorage都是用来存储客户端临时信息的对象。
+（2）localStorage和sessionStorage都只能存储字符串类型的对象
+（3）localStorage生命周期是永久，除非用户手动清除localStorage信息，否则这些信息将永远存在。
+（4）sessionStorage生命周期为当前窗口或标签页，一旦窗口或标签页被永久关闭了，那么通过sessionStorage中存储的数据也就被清空了。
+（5）不同浏览器无法共享localStorage或sessionStorage中的信息。
+unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。
+16-12-15
+客户端模板 MVC核心概念 数据绑定 依赖注入
+      客户端模板 augular中，模板和数据都会被发送到浏览器中，然后在客户端进行转配
+      MVC核心概念：把管理数据的代码（model）、应用逻辑代码（controller）、向用户展示数据的代码（view）清晰地分离开。Angularjs应用中：视图就是Document Object Model 控制器就是Javascript类，模型数据则被存储在对象的属性中。
+      数据绑定 可自动将model和view之间的数据同步。Angular实现数据绑定的?方式，可以让我们把model当作程序中唯?一可信的数据来源。view始终是model的投影。当model发生变化时，会自动反映到view上。
+      依赖注入是一种软件设计模式，用来处理代码的依赖关系。依赖注入只是简单的获取它所需要的东西，而不需要创建那些他们所依赖的东西。
+      ng-app指令告诉Angular应该管理页面中的哪一块。
+
+JavaScript执行引擎并非一行一行地分析和执行程序，而是一段一段地分析执行的。
+而且，在同一段程序的分析执行中，定义式的函数语句会被提取出来优先执行。函数定义执
+行完之后，才会按顺序执行其他语句代码。也就是说，在第一次调用myfunc之前，第一个函
+数语句定义的代码逻辑，已被第二个函数定义语句覆盖了。所以，两次都调用都是执行最后
+一个函数逻辑了一段代码中的定义式函数语句会优先执行，这似乎有点象静态语言的编译概念。所以，这一特征也被有些人称为：JavaScript的“预编译”。
+JavaScript里的代码也是一种数据，同样可以被任意赋值和修改的，而它的值就是代码的逻辑。只是，与一般数据不同的是，函数是可以被调用执行的。
+函数就是对象，只不过比一般的对象多了一个括号“()”操作符，这个操作符用来执
+行函数的逻辑。即，函数本身还可以被调用，一般对象却不可以被调用。
+对象和函数可以象数组一样，用属性名或方法名作为下标来访问并处理。
+this是一个特殊的内置参数，根据this参数，您可以访问到“这个” 对象的属性和方法，但却不能给this参数赋值。在一般对象语言中，方法体代码中的this可以省略的，成员默认都首先是“自己”的。但 JavaScript却不同，由于不存在“自我”，当访问“这个”对象时，this不可省略！
+    涉及到了对象的建立。我们使用了一种被称为JavaScript Object Notation(缩写JSON)的形式，翻译为中文就是“JavaScript对象表示法”
+    JSON的形式就是用大括“{}”号包括起来的项目列表，每一个项目间并用逗号“,”分隔，
+而项目就是用冒号“:”分隔的属性名和属性值。这是典型的字典表示形式，也再次表明了
+JavaScript里的对象就是字典结构。
+    需要将JSON字符串变成一个JavaScript对象时，只需要使用eval函数这个强大的数码转换引擎，就立即能得到一个 JavaScript内存对象。正是由于JSON的这种简单朴素的天生丽质，才使得她在AJAX舞台。
+    除JSON外，在JavaScript中我们可以使用new操作符结合一个函数的形式来创建对象。
+上成为璀璨夺目的明星。function MyFunc() {}; //定义一个空函数
+    var anObj = new MyFunc(); //使用new操作符，借助MyFun函数，就创建了一个对象。
+    在构造函数的prototype上定义的所有属性和方法，都是可以通过其构造的对象直接访问和调用的。也可以这么说， prototype提供了一群同类对象共享属性和方法的机制。
+对象可以掩盖原型对象的那些属性和方法，一个构造函数原型对象也可以掩盖上层构造函数
+原型对象既有的属性和方法。这种掩盖其实只是在对象自己身上创建了新的属性和方法，只
+不过这些属性和方法与原型对象的那些同名而已。JavaScript就是用这简单的掩盖机制实现了对象的“多态”性，与静态对象语言的虚函数和重载(override)概念不谋而合。
+      在AJAX技术迅猛发展的今天，许多成功的AJAX项目的JavaScript运行库都大量扩展了内置函
+数的prototype功能。比如微软的 ASP.NET AJAX，就给这些内置函数及其prototype添加了大量的新特性，从而增强了JavaScript的功能。
+      所谓的“闭包”，就是在构造函数体内定义另外的函数作为目标对象的方法函数，而这个对
+象的方法函数反过来引用外层外层函数体中的临时变量。这使得只要目标对象在生存期内始
+终能保持其方法，就能间接保持原构造函数体当时用到的临时变量值。尽管最开始的构造函
+数调用已经结束，临时变量的名称也都消失了，但在目标对象的方法内却始终能引用到该变
+量的值，而且该值只能通这种方法来访问。即使再次调用相同的构造函数，但只会生成新对
+象和方法，新的临时变量只是对应新的值，和上次那次调用的是各自独立的。的确很巧妙！
+
+《javascript权威指南》，《NodeJS实战》，《angular权威指南》，《ES6标准入门》,《数据结构》，《算法导论》，让我原原本本地看，能看多少是多少。从基本的闭包原理、HTTP通信到MVC框架手把手虐，不，是教。那时才发现曾经的自己跟个傻逼一样。一路走来现在自己也可以写交互动画的插件了，nodeJS算不上精通，写些逻辑不太复杂的全栈问题也不大了。
+
+作者：张伟
+链接：https://www.zhihu.com/question/19923687/answer/131262624
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+12-20
+“Unexpected token d”；点进去也没看到JS里面有下划的红色波浪线出现，非常奇怪。
+ 所以去百度了一下发现是因为JSON出现了问题。有两种原因一种是名字出错，第二种是因为JSON.parse()中只能是数组，但是如果把字符串写进去也会出现这种情况，不过是报错中的d改变为p而已。
+左上角，border-top-left-radius:100% /50%;表示左上角水平方向圆角为100%、垂直方向圆角为50%。
+#采用Flex布局的元素，称为Flex容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称"项目"。
+容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
+项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
+
+12-21
+CSS书写顺序
+1.位置属性(position, top, right, z-index, display, float等)
+2.大小(width, height, padding, margin)
+3.文字系列(font, line-height, letter-spacing, color- text-align等)
+4.背景(background, border等)
+5.其他(animation, transition等)
+
+#.padding值如果设置百分比，是根据父级的宽度，之前也没有太注意。
+
+#.使用了display：flex进行布局时，一旦宽度不够，会进行等比例缩放。解决办法——在父级设置flex-shrink：0；
+#字体的缩写样式font：字体粗细 字体大小/行高 字体样式
+#清除浮动的方法：第一种，after{content=".";display:table;clear:both;}  ；第二种：给父级加一个overflow：hidden触发BFC来清除浮动
+
+1.使用margin：0 auto这一属性的元素必须是块级元素。
+2. 学习了如何消除display：inline-block元素之间产生的空隙
+    a.将前一个的结尾标签和下一个开始标签放在一起。
+    b.在元素的开始标签和结束标签之间加注释
+    c.使用margin负值
+    d.设置 font-size：0 
