@@ -233,11 +233,21 @@ CSS书写顺序
                         4.减轻服务器和带宽的负担
             Ajax的缺点：1.浏览器对XMLHttpRequest对象的支持度不足
                         2.破坏浏览器前进、“后退”按钮的正常功能
-
                         3.对搜索引擎的支持不足
-
                         4.开发和调试工具的不足
-
 收获：看到了一篇对Ajax非常详细的文章，分享一下。
-
       http://www.cnblogs.com/Garden-blog/archive/2011/03/11/1981778.html
+
+git指令：
+$ git remote add origin git@github.com:nigeriahu/testgit.git
+$ git push -u origin master
+$ git push origin master
+
+1.使用代理：
+git config --global http.proxy http://xxx.xxx.xxx.xx:8080
+2.还不行的话用http连接：
+git remote add origin https://github.com/username/learngit.git
+git remote add origin https://github.com/nigeriahu/www.git
+
+git remote remove origin
+git remote add origin git@github.com:michaelliao/learngit.git
