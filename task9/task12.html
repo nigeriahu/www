@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css12.css">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <title>task12</title>
+</head>
+<body>
+<!-- 底部热线注册登录 -->
+<div class="head container-fluid">
+  <div class="row">
+      <div class="col-xs-6 col-sm-4">
+          <span class="hot-line">客服热线：010-594-78634</span>
+      </div>
+      <div class="col-xs-6 col-sm-8">
+          <div class="log">登陆</div>
+          <div class="log">注册</div>
+      </div>
+  </div>
+</div>
+<!-- 导航 -->
+<div class="top container-fluid">
+    <div class="row">
+        <div class="col-xs-0 col-sm-6">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">首页</div>
+            <div class="box">在线定制</div>
+            <div class="box">标准箱</div>
+            <div class="box">品质保证</div>
+        </div>
+    </div>
+</div>
+<!-- 流程步骤 -->
+<div class="body">
+    <div class="procedure container">
+        <div class="row">
+            <div class="col-xs-pull-1 col-xs-11">
+                <div class="part">
+                    <div class="bar ">
+                        <div class="circle"><p>4</p></div>
+                        <h4 class="hh">4.确认下单</h4>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="bar">
+                        <div class="circle"><p>3</p></div>
+                        <h4 class="hh">3.上传附件</h4>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="bar">
+                        <div class="circle"><p>2</p></div>
+                        <h4 class="hh">2.选择数量</h4>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="bar1">
+                        <div class="circle1"><p>1</p></div>
+                        <h4 class="h">1.定制纸箱</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 定制选择 -->
+
+    <div class="container">
+        <div>请您按照以下步骤来定制您的纸箱</div>
+        <div class="step1"><img src="box.png">选择箱型</div>
+        <div class=" row selection">
+            <select name="details">
+                <option value="detail1">查看详情</option>
+                <option value="detail2">详情1</option>
+                <option value="detail3">详情2</option>
+            </select>
+        </div>
+        <div class="row types">
+            <label><input type="radio" name="type" id="curtain1" /><label for="curtain1">对口箱</label>
+            </label>
+            <label><input type="radio" name="type" id="curtain2" /><label for="curtain2">飞机盒</label>
+            </label>
+            <label><input type="radio" name="type" id="curtain3" /><label for="curtain3">天地盖</label>
+            </label>
+        </div>
+    </div>
+
+
+    <ul class="container">
+        <div class="step1"><img src="Ruler.png">确认尺寸</div>
+        <li class="row selection">
+            <select name="details">
+                <option value="detail1">查看详情</option>
+                <option value="detail2">详情1</option>
+                <option value="detail3">详情2</option>
+            </select>
+
+        </li>
+        <li class="row size1">
+            <label><input type="radio" name="type" id="outside" /><label for="outside">外径</label>
+            </label>
+            <span>长：</span>
+            <input type="number" name="long">
+            <span>mm</span>
+            <span>宽：</span>
+            <input type="number" name="wide">
+            <span>mm</span>
+            <span>高：</span>
+            <input type="number" name="high">
+            <span>mm</span>
+        </li>
+        <li class="row size2">
+            <label><input type="radio" name="type" id="inside" /><label for="curtain1">内径</label>
+            </label>
+            <span>长：</span>
+            <input type="number" name="long">
+            <span>mm</span>
+            <span>宽：</span>
+            <input type="number" name="wide">
+            <span>mm</span>
+            <span>高：</span>
+            <input type="number" name="high">
+            <span>mm</span>
+        </li>
+    </ul>
+
+
+    <ul class="container">
+        <div class="step1"><img src="Cut.png">选择材质</div>
+        <li class="row selection">
+            <select name="details">
+                <option value="detail1">查看详情</option>
+                <option value="detail2">详情1</option>
+                <option value="detail3">详情2</option>
+            </select>
+
+        </li>
+        <li class="row types">
+            <label><input type="radio" name="type" id="material" /><label for="material">三层A瓦优质</label>
+            </label>
+            <label><input type="radio" name="type" id="material1" /><label for="material1">三层A瓦优质</label>
+            </label>
+            <label><input type="radio" name="type" id="material2" /><label for="material2">三层A瓦优质</label>
+            </label>
+            <label><input type="radio" name="type" id="material3" /><label for="material3">三层A瓦优质</label>
+            </label>
+            <label><input type="radio" name="type" id="material4" /><label for="material4">三层A瓦优质</label>
+            </label>
+            <label><input type="radio" name="type" id="material5" /><label for="material5">三层A瓦优质</label>
+            </label>
+
+
+        </li>
+    </ul>
+    <!-- 提交按钮 -->
+    <div class="submit">
+        <input class="button" type="submit" value="下一个">
+    </div>
+    <!-- 底部 -->
+    <div class="down container-fluid">
+        <div class="row">
+            <div class="text-left col-xs-12 col-sm-6 col-md-3 col-lg-3"><p>51包装网— 纸箱包装首选服务平台</p></div>
+            <div class="text-middle col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <li class="links"><a href="#" >关于我们</li>
+                <li class="links"><a href="#" >配送流程</li>
+                <li class="links"><a href="#" >联系我们</li>
+                <li class="links"><a href="#" >下单指南</li>
+                <li class="links"><a href="#" >媒体介绍</li>
+            </div>
+            <div class="text-right col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <li>TEL：400-0000-000</li>
+                <li>企业QQ：123456789</li>
+                <li>微信号：XXXXXXX</li>
+            </div>
+        <div class="photo col-xs-12 col-sm-6 col-md-3 col-lg-3"><img src="erweima.png"></div>
+        </div>
+    </div>
+  <div class="bottom">
+        <span class="text">北京五一包装科技有限公司Copyright ©201551baozhuang.com015 All rights reserved. 京icp备99999999-1</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<title>九宫格</title>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,
+initial-scale=1">
+    <style type="text/css">
+        .big{
+            margin: 0 30%;
+        }
+        .small{float:left;
+            padding:15%;
+            margin:1%;
+            border-radius:0.5em;
+            background:yellow;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="big">
+    <div class="small" id="a0"></div>
+    <div class="small" id="a1"></div>
+    <div class="small" id="a2"></div>
+    <div class="small" id="a3"></div>
+    <div class="small" id="a4"></div>
+    <div class="small" id="a5"></div>
+    <div class="small" id="a6"></div>
+    <div class="small" id="a7"></div>
+    <div class="small" id="a8"></div>
+
+</div>
+<script>
+    var X="a"+1;//初次寻址值，a1~a8，否则‘document.getElementById(X).style.backgroundColor = "orange";’卡死；
+
+    var Num;
+    function a() {
+        var boxID;
+        var color;
+        var name;
+        Num=Math.floor(Math.random() * 9);
+        boxID = "a" + Num;
+        color = Math.floor(Math.random() * 3);
+
+        switch (color) {
+            case 0:
+                color = "red";
+                name="红色";
+                break;
+            case 1:
+                color = "blue";
+                name="蓝色";
+                break;
+            case 2:
+
+                color = "green";
+                name="绿色";
+                break;
+        }
+        document.getElementById(X).style.backgroundColor = "yellow";//重置上一个boxID颜色
+        X=boxID;                                                    //随机数赋给X存储
+        document.getElementById(boxID).style.backgroundColor = color;
+        console.log("格子"+(Num+1)+"变成了"+name)
+    }
+    setInterval(a,1000)
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+@charset "utf-8";
+html{
+    overflow-y: scroll;
+    padding: 0;
+    }
+*{
+    margin:0;
+    padding:0;
+    font-family: Yahei;
+}
+body{
+    min-width: 320px;
+    max-width: 720px;
+    margin:0 auto;
+    padding: 0;
+}
+.header{
+    background-color: #5fc0cd;
+    height: 4.5rem;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+    vertical-align: middle;
+    padding-top: 2rem;
+    }
+.back{
+    margin-left: 2%;
+    float:left;
+}
+.body1{
+    position: relative;
+    text-align: left;
+    height:auto;
+    width: 100%;
+    background-size:cover;
+    float:left;
+    background: url("bg.png") center no-repeat;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+
+    }
+.idle{
+    position: relative;
+    border-radius:50%;
+    float: left;height: 10rem;
+    width: 25rem;
+    margin: 80px 50px 80px 30px;
+}
+.info{
+    position: absolute;
+    left: 50%;
+    top:30%;
+    display: inline-block;
+    color: white;
+}
+.name{
+    font-size: 2rem;
+}
+.info span{
+    font-size: 1.5rem;
+}
+.idle p{
+    position:absolute;
+}
+.idle img{
+    border-radius: 50%;
+}
+.item2{float: left; margin-top:80px;color:#ffffff;}
+.item2 p{font-size: 40px;}
+.weizhi{margin: 0;}
+
+.body2{
+    padding:0 2%;
+    overflow: hidden;
+    width:97%;
+    height: auto;
+    float: left;
+}
+.show{clear: both}
+.line1{
+    font-size: 1.5rem;
+    vertical-align: middle;
+    height: 5rem;
+    width:100%;
+    border-bottom: 1px solid #CCC;
+    padding-top: 2.2rem;
+    float:left;
+    }
+.line2{
+    padding-top: 2.2rem;
+    font-size: 25px;
+    height: 5rem;
+    width:100%;
+    border-bottom: 1px solid #CCC;
+    float:left;
+}
+.line3{
+    padding-top: 2.2rem;
+    font-size: 25px;
+    height:4rem;
+    width:100%;
+    float:left;
+}
+.footer{
+    height: 8rem;
+    width:100%;
+    float:left;
+}
+.mes,.tel{
+    border: 2px solid #5fc0cd;
+    color:#5fc0cd;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    width: 41%;;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    margin:0 3%;
+    float:left;
+}
+.tel{
+    background-color: #5fc0cd;
+    color:white;
+}

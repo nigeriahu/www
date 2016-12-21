@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="js2-2.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>js2-2</title>
+
+</head>
+<body>
+<div class="top">
+    <a class="left" href="js2-1.html"><img src="icon-arrow-left.png"></a>
+    <span class="top-line">参数设置</span>
+    <a class="question" href="#"><img src="icon-question2.png"></a>
+</div>
+<div class="main">
+    <div class="header">
+        <div class="header-left">
+            <p>玩</br>家</br>配</br>比</p>
+        </div>
+        <div class="right-top">
+            <div id="items">
+
+            </div>
+        </div>
+        <div id="right-down">
+            <button id="set" onclick="set()">点击设置<img src="icon-pen.png"></button>
+            <!--<button id="setting">点击设置<img src="icon-pen.png"></button>-->
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="center">
+      <p>水民词组</p>
+      <p>幽民词组</p>
+    </div>
+    <div class="footer">
+        <p>玩家人数<input type="text" value="" min="6" max="18" id="num" oninput="assignIn();"/>人</p>
+        <div class="nav-bar">
+            <i id="minus"></i><input type="range" name="rangeInput" step="1" value="8" min="6" max="18" id="a" onchange="updateTextInput(this.value);"/> <i id="plus"></i>
+        </div>
+    </div>
+    <button id="distribution" onclick="jumpNext()">去发牌</button>
+</div>
+
+<script src="js2-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+* {
+    margin:0;
+    font-family: "Microsoft YaHei UI";}
+body{
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    max-width: 640px;
+}
+.top{
+    margin:0 auto;
+    background: #29bde0;
+    height: 5rem;
+    max-width: 640px;
+    border-bottom: 1px solid white;
+}
+.header{
+    height: 130px;
+    width:100%;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #29bde0;}
+.rectangle{
+    float:left;
+    padding: 65px 0 15px 15px;}
+.x{
+    float:right;
+    padding: 65px 15px 15px 0;}
+.vote{
+    position: relative;
+    padding: 50px 45%;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;}
+.top{
+    background-color: #b9e9f5;
+    height: 5rem;}
+.start{
+    float:right;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 2px;
+    margin-right: 2px;}
+
+.body1{
+    overflow: hidden;
+    position: relative;
+    float:left;
+    height: 1330px;
+    width:100%;
+    min-width: 320px;
+    background-color: #29bde0;}
+.box{
+    float: left;
+    width: 24%;
+    margin: 4% 0 2% 7%;
+    text-align: center;}
+.box-top{
+    border: 3px solid white;}
+.box-down{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 0;
+    opacity: 0;}
+
+.kill{
+    display: inline-block;
+    width: 25%;
+    padding: 12.5% 0;
+    background-image:(toupiao1.png);
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: 0 0;}
+.search{
+    background-position: 23 0;
+    background-image:(toupiao2.png);
+    display: inline-block;
+    width: 25%;
+    padding: 12.5% 0;}
+.aim{
+    display: inline-block;
+    width: 25%;
+    padding: 12.5% 0;
+    background-position: 67 0;
+    background-image:(toupiao3.png);}
+.aid{
+    display: inline-block;
+    width: 25%;
+    padding: 12.5% 0;
+    background-position: 100 0;
+    background-image:(toupiao4.png);}
+
+
+.id{
+    padding:25% 0;
+    font-size:3rem;
+    background: #f5c97b;}
+.num{
+    font-size: 2.276rem;
+    color: white;
+    background: #83b09a;
+}
+.triangle-down{
+    width:0;
+    height: 0;
+    margin-left: 5%;
+    border-top: 1rem solid #b9e9f5;
+    border-left: 1rem solid transparent;
+    border-right:1rem solid transparent;
+}
+.text{
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: #f0f0f0;
+
+}
+.shutiao1 {
+    height: 100%;
+    position: absolute;
+    top: 220px;
+    right: 1px;
+}
+
+.shutiao2 {
+    position: absolute;
+    top: 220px;
+    right: 1px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    max-width: 640px;
+    width: 100%;
+    height:5rem;
+    text-align: center;
+    background-color: #29bde0;
+    border-top: 1px white solid;
+}
+.vote{
+    -moz-appearance: none;
+    outline:none;
+    background-color: #29bde0;
+    color:white;
+    text-align: center;
+}

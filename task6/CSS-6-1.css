@@ -1,0 +1,83 @@
+*{
+
+    font-family: "Microsoft YaHei UI";}
+.header{
+    margin:0;
+    height: 120px;
+    width: 100%;
+    background-color:#29bde0;
+}
+.rectangle{
+    float:left;
+    padding: 65px 0 15px 15px;
+}
+.body1{
+    float:left;
+    height: 1000px;
+    width: 100%;
+    background-color: #f0f0f0;
+
+}
+.line1{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+    margin:25px 35px 0 35px;
+    height: 120px;
+    width: 95%;
+    border: 1px solid #CCC;
+    font-size: 35px;
+    color: #9a9a9a;
+}
+.right{
+    position:relative;
+    float:right;
+    margin-right:10px;
+}
+.line2{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+    margin:30px 35px 0 35px;
+    height: 755px;
+    width: 95%;
+    border: 1px solid #CCC;
+    font-size: 3rem;
+    color: #9a9a9a;
+    }
+.sanjiao{
+    text-align: right;
+    float:right;
+    vertical-align: middle;
+    padding-top: 377px;
+}
+.game{
+    font-size: 40px;
+    color:#FF9900;
+    height:60px;
+    padding: 40px;
+    border-bottom: 1px solid #FF9900;
+}
+
+.line3{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #29bde0;
+    margin: 30px 35px 50px 35px;
+    height: 0;
+    width: 95%;
+    font-size: 3rem;
+    padding:65px 0;
+    color: #f0f0f0;
+}
+.you{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    padding-top:0px;
+    color: #9a9a9a;
+}
+.circle{
+    text-align: center;
+    vertical-align: middle;
+}

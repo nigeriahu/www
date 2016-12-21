@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>task3-6部分布局思考</title>  
+    <style type="text/css">
+        /*初始化样式*/
+        *{margin: 0;padding: 0;}
+        input{box-sizing: border-box;}
+
+        /*外层盒子*/
+        .box{
+            position: relative;     /*为了定位方便，内部元素不需要相对于外层盒子定位时可以删掉*/
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            margin-top: 10px;
+            background-color: #00c853;
+            text-align: center;
+            line-height: 30px;    
+        }
+        .box-table{
+            display: table;
+        }
+
+        .fl-1{
+            float: left;
+        }
+        .fr-1{
+            float: right;
+        }
+
+        .fl-2{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .fr-2{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .fl-3{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+        .fr-3{
+            width: 100%;
+            padding-left: 30px;
+        }
+        
+        .fl-4{
+            width: 20px;
+            height: 20px;
+            display: table-cell;
+        }
+        .fr-4{
+            width: 100%;
+            display: table-cell;
+        }
+
+        .text{
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #66bb6a;
+        }
+        h3{
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h3>类型一：主体分为三部分，中间居中，左右两块分别在左右两侧</h3>
+    <div class="box">
+        <span class="fl-1">返回</span>
+        标题
+        <span class="fr-1">注册</span>
+    </div>
+    <p class="text">方法一：针对这种类型的布局，可以考虑左右两边采用float，中间部分当父元素的内容进行居中。
+    </p>
+
+    <div class="box">
+        <span class="fl-2">返回</span>
+        <p>标题</p>
+        <span class="fr-2">注册</span>
+    </div>
+    <p class="text">方法二：中间部分宽度100%进行居中，左右两部分用绝对定位脱离文档流进行位置调整（相对于父元素去进行定位）。
+    </p>
+
+    <h3>类型二：主体分为两部分，左侧小图标，右侧表单占据剩余空间</h3>
+    <div class="box">
+        <img src=""  class="fl-3">
+        <input type="" name="" class="fr-3">
+    </div>
+    <p class="text">方法一：左侧图标采用绝对定位固定，右侧表单正常定位宽度100%加一个向左的内边距。（图标是表单的一部分可采用这种方式）
+    </p>
+
+    <div class="box box-table">
+        <span class="fl-4"><img src=""  class="fl-3"></span>
+        <input type="" name="" class="fr-4">
+    </div>
+    <p class="text">方法二：整体思路就是将div布局改成表格布局来实现，用display: table;把父元素改成类似table的块，再把内部元素用display: table-cell改成类似表格中的单元格，这样不管左侧元素的宽度是什么，只要把右侧表单的宽度设为100%就会自动占据剩余的部分。
+    </p>
+
+</body>
+</html>
+
+
+ 

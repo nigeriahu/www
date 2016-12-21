@@ -1,0 +1,238 @@
+
+.main{
+    overflow: hidden;
+}
+.main-top{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1349px;
+    min-height: 425px;
+}
+.carousel{
+    position: absolute;
+    transition: all 0.5s ease-in 0s;
+}
+.carousel div{
+    float:left;
+    text-align: center;
+}
+img {
+    float: left;
+    width: 100%;
+}
+.banner{
+    float: left;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    border:none;
+}
+.pre{
+    position: absolute;
+    top: 44%;
+    left: 10%;
+    width: 27px;
+    height: 46px;
+    background:url(left.png);
+}
+.next{
+    position: absolute;
+    top: 44%;
+    right: 10%;
+    width: 27px;
+    height: 46px;
+    background: url(right.png);
+}
+.row1left{
+    float: left;
+    margin: 100px 0 40px;
+
+}
+.row1right{
+    float:left;
+    margin: 100px 20px 40px;
+    width: 205px;
+    padding: 48px 0 20px 50px;
+    border-left: 1px dashed #999;
+}
+.box1{
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right: 90px;
+    text-align: center;
+}
+.box1 p{
+    color:#999;
+}
+.box1imag {
+    margin: 0 auto;
+    width: 43px;
+    height: 62px;
+    background: url("rocket.png") no-repeat 0 0;
+}
+.box2imag {
+    margin: 0 auto;
+    width: 60px;
+    height: 62px;
+    background: url("books.png") no-repeat 0 0;
+}
+.box3imag {
+    margin: 0 auto;
+    width: 52px;
+    height: 55px;
+    background: url("renmai.png") no-repeat 0 0;
+}
+
+.user{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("user.png") no-repeat 0 0;
+}
+.clear {
+    clear:both;
+}
+h2{
+    text-align: center;
+}
+.list {
+    margin:30px auto;
+    list-style: none;
+    height: 70px;
+    width: 100%;
+    padding: 25px auto;
+    color:#29b078;
+}
+.list li{
+    float: left;
+    list-style: none;
+
+    display: inline-block;
+    text-align: center;
+}
+.list p{
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    padding: 10px 5px 0 5px;
+    text-align: left;
+    color:#999;
+}
+.circle {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    text-align: center;
+    color: #29b078;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    box-shadow:1px 1px 1px #e6e6e6;
+}
+.arrow{
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height:31px;
+    background: url("xiaojiantou.png") no-repeat 0 0;
+}
+.middle2 .middle3{
+
+}
+.show{
+    width: 100%;
+    margin:5px;
+
+}
+.show p{
+    color:#999;    padding: 20px;
+}
+.show ul{
+
+}
+.show li{
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+    width: 20%;
+    border: 1px solid #999;
+}
+.avatar{
+    display:inline-block;
+    text-align: center;
+    height: 108px;
+    width:108px;
+    border-radius: 54px;
+    margin: 20px 30%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.show h2{
+    padding: 20px;
+}
+
+.more {
+    margin:20px auto;
+    text-align: center;
+}
+.circle2{
+    margin: 0 2px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height:13px;
+    background: url("dian2.png") no-repeat 0 0;
+}
+.enterprise li{
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 50px 0;
+    width: 235px;
+    text-align: center;
+}
+.enterprise{
+    width: 100%;
+    height: 240px;
+    display: inline-block;
+    padding: 39px 25px;
+    color: white;
+    text-align: center;
+}
+.enterprise img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.enterprise-logo{
+    width: 100%;
+    height: 175px;
+    background-color: #fff;
+    box-shadow: 0 0 1px #ddd;
+}
+.footer-top{
+    margin: 18px auto;
+    color: #999;
+    background-color: #fff;
+    text-align: center;
+}
+.links{
+    text-align: center;
+    width:100%;
+    margin:20px auto;
+}
+.links ul{
+    text-align: center;
+
+}
+.links li{
+    padding:20px 5px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+}

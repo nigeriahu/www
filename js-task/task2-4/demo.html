@@ -1,0 +1,34 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function getInnerHTML()
+        {
+            alert(document.getElementById("tr1").innerHTML);
+        }
+        function updateTextInput(val) {
+            document.getElementById('textInput').value=val;
+        }
+    </script>
+</head>
+<body>
+
+<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+<input type="text" id="textInput" value="">
+
+<table border="1">
+    <tr id="tr1">
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+    <tr id="tr2">
+        <td>Peter</td>
+        <td>Griffin</td>
+    </tr>
+</table>
+<br />
+<input type="button" onclick="getInnerHTML()"
+       value="Alert innerHTML of table row" />
+
+
+</body>
+</html>

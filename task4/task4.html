@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html:charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>task4</title>
+  <style type="text/css">
+    *{
+      margin:0; width: 100%;font-family:Yahei;
+    }
+    .heading{
+      background-color:#5fc0cd;
+      height: 7rem;
+      font-size: 2em;
+      text-align: center;
+      color: white;
+      float:left;
+    }
+    .login-1{
+      position: relative;
+      margin-top: 5rem;
+      background-color:#5fc0cd;
+      height: 7.5rem;
+      text-align: center;
+      font-size: 2em;
+      color: white;
+    }
+    .body1{
+      position: relative;
+      background-color:#eff0f4;
+      height: 25rem;
+      float: left;
+    }
+    .close{
+      position: absolute;
+      left:2%;
+      top:5%;
+      float:left;
+      text-align: left;
+    }
+    .login{
+      top: 5%;
+      position: absolute;
+      text-align: center}
+    .register{
+      text-align: right;
+      right: 2%;
+      top:5%;
+      position: absolute;
+    }
+    .input1{
+      color:#eff0f4;
+      font-size: 2em;
+      margin-top: 30px;
+      padding-top: 40px;
+      border:2px;
+      background-color: white;
+      height: 110px;
+      position: relative;
+      text-align: center;
+    }
+
+    .forget{
+      font-size: 2em;
+      float:right;
+      text-align: right;
+      color:#5fc0cd;
+      text-decoration: none;
+    }
+    a:visited{
+      color: #5fc0cd;
+    }
+    .bar input{
+      text-indent: 2em;
+      left: 3%;
+      border:none;
+      float: left;
+      border-left: 1px solid #eaedee ;
+      font-size: 1.5rem;
+      height: 4rem;
+      width: 70%;
+    }
+    .bar {
+      position: absolute;
+      left:10%;
+    }
+
+    img {
+      position: relative;
+      margin-left: 4%;
+      vertical-align: middle;
+      max-width:3%;
+      height:auto;
+      float:left
+    }
+  </style>
+  <link rel="stylesheet" href="../task5/task5.css">
+</head>
+<body>
+  <div class="heading">
+    <div class="close">关闭</div>
+    <div class="login">登陆</div>
+    <div class="register">注册</div>
+  </div>
+  <div>
+  <div class="body1">
+    <div class="input1">
+      <table>
+        <tr>
+          <td></td>
+      <img src="phone.png" align="middle"/>
+          <label for="username" class="bar"><input type="text" placeholder="请输入手机号" id="username" maxlength="11"></label>
+
+
+        </tr>
+        <!-- 插入的两个小图片都不能上下居中 -->
+      </table>
+      </div>
+    <div class="input1">
+      <img src="password.png" align="middle"></img>
+      <label for="password" class="bar"><input type="password" placeholder="请输入密码" id="password" minlength="6" maxlength="18"></label>
+
+    </div>
+    </div>
+
+      <button class="login-1">登陆</button>
+
+      <a class="forget" href="http://www.jnshu.com/" target="_blank">忘记密码？</a>
+  </div>
+
+</body>
+</html>

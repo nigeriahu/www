@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+/**.main{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(250,250,250);
+} **/
+.top{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+}
+.nav{
+    margin:0;
+    background-color: #29b078;
+}
+.navbar,.navbar-header,.navbar-default,.navbar-collapse{
+    margin: 0;
+    background: #29b078;
+    border: 0;
+}
+.navbar-right a:visited{color:white;}
+.navbar-right a:hover{border-bottom:4px solid white;}
+
+.head.container{
+    margin:0;
+    padding:0;
+}
+.navbar-brand img{height: 100%;}
+
+.tel{
+    color: #29b078;
+    line-height: 300%;
+}
+.rocket li h3 ul{
+    text-align: center;
+
+}
+.rocket ul{
+    margin-top: 4rem;
+}
+.rocket{
+    list-style: none;
+}
+.feature,.study{
+    margin: 4rem auto;
+    text-align: center;
+    display: inline-block;
+}
+.online{
+    border-left: 2px dashed #9a9a9a;
+    background-color: white;
+    list-style: none;
+}
+.icon{
+    vertical-align: middle;
+}
+.list {
+    margin:2rem auto;
+    list-style: none;
+    height: 5rem;
+    width: 100%;
+    padding: 25px auto;
+    color:#29b078;
+}
+.list li{
+    float: left;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.list p{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    text-align: left;
+    color:#999;
+}
+.circle {
+    background-color: white;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    text-align: center;
+    color: #29b078;
+    line-height: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow:1px 1px 1px #e6e6e6;
+}
+.arrow{
+    margin: auto 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height: 31px;
+    background: url("xiaojiantou.png") no-repeat 0 0;
+}
+.show{
+    width: 100%;
+}
+.show p{
+    color:#999;    padding: 1rem;
+}
+.show ul{
+
+}
+.show li{
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+    width: 100%;
+    border: 1px solid #999;
+}
+.avatar{
+    display:inline-block;
+    text-align: center;
+    height: 6rem;
+    width:6rem;
+    border-radius:50%;
+    margin: 20px 30%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.show h3{
+    padding: 1rem;
+}
+.enterprise{
+    display: inline-block;
+    padding: 39px 0;
+    text-align: center;
+}
+.enterprise li{
+    list-style: none;
+}
+.enterprise img{
+    max-width: 100%;
+    vertical-align: middle;
+    padding:2rem 4rem;
+}
+.enterprise img:hover{
+    box-shadow: 0 0 4px 4px #e9e9e9;
+}
+.enterprise-logo{
+    background: white;
+    width: 100%;
+    box-shadow: 0 0 1px #ddd;
+}
+.links{
+    background-color: rgb(250,250,250);
+    text-align: center;
+    width:100%;
+    margin:20px auto;
+}
+.links ul{
+    text-align: center;
+}
+.links li{
+    padding:20px 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-middle{
+    width: 100%;
+    height: 165px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #29b078;
+}
+.footer-middle ul li{
+    list-style: none;
+}
+.footer-middle-left{
+    float: left;
+    width: 360px;
+    height: 100%;
+}
+.footer-middle-left p{
+    font-size: 16px;
+    padding-top: 32px;
+}
+.footer-middle-left ul{
+    padding-top: 60px;
+}
+.footer-middle-left ul li{
+    display: inline-block;
+}
+.footer-middle-middle{
+    width: 280px;
+    height: 100%;
+}
+.footer-middle-middle p{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+.footer-middle-middle ul  li{
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+    margin: 10px 0;
+}
+.footer-middle-right{
+    padding-right: 80px;
+}
+.footer-middle-right p{
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 10px;
+}
+.footer-bottom {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    line-height: 30px;
+    border-top: 1px solid #32c086;
+    background-color: #29b078;
+}
+.footer-bottom p{
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand img{
+        height:100%;}
+    .online{text-align: center}
+    .rocket{
+        margin-bottom: 2rem;
+    }
+    .list{
+        margin-top: 1.2rem;
+    }
+    .avatar span{
+        display: inline-block;
+        padding:0 20%;
+        margin-bottom: 2rem;
+    }
+    .footer-middle-right{
+        text-align: center;
+    }
+    .footer-bottom{
+        padding: 0;
+        margin: 0;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .road{
+        padding-left:2rem;
+    }
+    h3{
+        font-size: 20px;
+    }
+}

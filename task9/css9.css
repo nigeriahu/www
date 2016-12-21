@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Microsoft YaHei UI";
+}
+.head{
+    height: 50px;
+    width: 100%;
+    background: #1277dc;
+    color:white;
+}
+.hot-line{
+    float: left;
+    margin-left: 2%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.log{
+    float: right;
+    margin-right: 3%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.log:hover{
+    background: white;
+    color:black;
+}
+.top{
+    height: 110px;
+    width: 100%;
+    background: #f9f9f9;
+
+}
+.box{
+    float: right;
+    margin:3% 2% 0 0;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+}
+.box:hover{
+    background: #1277dc;
+    color:white;
+}
+.body{
+    height:800px;
+    width:100%;
+}
+.bottom{
+    padding-top:1rem;
+    height: 50px;
+    width: 100%;
+    background: #1277dc;
+    color:white;
+}
+.text{
+    margin-left: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.procedure{
+    height: 150px;
+    width:100%;
+
+}
+.circle{
+    top: -0.7rem;
+    margin-left: 45%;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border-radius:2rem;
+    background: #ccc;
+}
+.circle1{
+    top: -0.7rem;
+    margin-left: 45%;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border-radius:2rem;
+    background: #ff7f00;
+    vertical-align: middle;
+}
+.circle p,.circle1 p{
+    position: relative;
+    left: 0.6rem;
+}
+.bar1{
+    background: #ff7f00;
+    height:.5rem;
+    width: 110px;
+    float:right;
+    margin-top: 40px;
+}
+.bar{
+    background: #ccc;
+    height:.5rem;
+    width: 100px;
+    float:right;
+    margin-top: 40px;
+}
+
+.h{
+    color:#ff7f00;
+}
+.hh{
+    color:#ccc;
+}
+.step1{
+    height: 40px;
+    background: #ccc;
+    width:100%;
+    padding: 10px 0;
+}
+.types{
+    list-style: none;
+    padding: 10px;
+    border:1px solid #9a9a9a;
+}
+.selection{
+    list-style: none;
+    float:right;
+    padding:15px;
+}
+.size1{
+    padding: 10px;
+    border-top:1px solid #9a9a9a;
+}
+.size2{
+     padding: 10px;
+     border-bottom:1px solid #9a9a9a;
+ }
+.submit{
+    height: 10rem;
+
+}
+.button{
+    position:absolute;
+    left:45%;
+    bottom:-10%;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color:white;
+    background: #e15053;
+}
+.down{
+    height: 10rem;
+    width:100%;
+    background: #ccc;
+}
+.text-left{
+    padding: 2rem;
+    float: left;
+}
+.text-middle{
+    padding: 2rem;
+    float: left;
+    display: inline-block;
+}
+.text-right{
+    float: left;
+    padding: 1rem 2rem;
+}
+.text-middle,.text-right li{
+    list-style: none;
+}
+.links{
+    float:left;
+}
+.photo{
+    float:right;
+    margin:0 2rem;
+}

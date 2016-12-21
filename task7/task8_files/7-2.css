@@ -1,0 +1,110 @@
+
+
+
+
+h1,h2{
+    text-align: center;
+}
+.qq{
+    float: right;
+}
+.header{
+    background-color: green;
+    padding:1rem 0;
+    overflow: hidden;
+}
+.header span{
+    color:rgb(41,176,120);
+}
+.myNav{
+    background-color: blue;
+}
+.carousel-control p {
+    margin-top: 90%;
+}/* 轮播图的样式变换。 */
+
+
+.content-box{
+    position: relative;
+    padding-right:5rem;
+    padding-left:5rem;
+    margin:2rem 0;
+}
+.content-box-log{
+    text-align: center;
+    width:4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 2rem;
+    background-color: green;
+    position: absolute;
+    left:0;
+    top:10%;
+}
+
+.content-log{
+    position: absolute;
+    right:10%;
+    top:20%;
+}
+
+
+
+
+
+.show,.company{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.friendLink a{
+    color:rgb(153,153,153);
+    margin:1rem 0 1rem 0;
+}
+
+
+
+
+.footer-middle p{
+    margin-top:2rem;
+}
+
+
+.footer-right{
+    text-align: right;
+    padding:1rem 0;
+}
+.footer-left span{
+    display: inline-block;
+    margin:2rem 0 4rem 0;
+}
+
+
+.footer{
+    background-color: rgb(38,162,111);
+    color:white;
+}
+.footer a{
+    color:white;
+}
+
+.copyright{
+    text-align: center;
+    padding:1rem 0;
+    border-top:1px solid rgb(50,192,134);
+}
