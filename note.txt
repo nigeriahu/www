@@ -239,6 +239,7 @@ CSS书写顺序
       http://www.cnblogs.com/Garden-blog/archive/2011/03/11/1981778.html
 
 git指令：
+*每次要求输入账号密码登陆说明成功，否则需要重试
 $ git remote add origin git@github.com:nigeriahu/testgit.git
 $ git push -u origin master
 $ git push origin master
@@ -248,6 +249,6 @@ git config --global http.proxy http://xxx.xxx.xxx.xx:8080
 2.还不行的话用http连接：
 git remote add origin https://github.com/username/learngit.git
 git remote add origin https://github.com/nigeriahu/www.git
-
 git remote remove origin
 git remote add origin git@github.com:michaelliao/learngit.git
+
