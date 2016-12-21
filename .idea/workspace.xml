@@ -1,227 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5a5533e-5092-439c-8c04-d73b37a73499" name="Default" comment="continue">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/arrow_undo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/bgitem.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/bgmenu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/dark_pixel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/donate-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/donate-25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/donate-50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/donate-other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/es.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/fr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/how-smartsprites-works.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/li.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/quote.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/vert-ie6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/img/vert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/lib/args4j-2.0.16.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/lib/commons-io-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/lib/commons-lang3-3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/lib/commons-math3-3.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/lib/guava-18.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/lib/smartsprites-0.2.11.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/absolute-image-url/absolute-path/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-in-subfolders/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-in-subfolders/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-output-dir/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-output-dir/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/example-from-the-website/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/example-from-the-website/img/top-frame.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/example-from-the-website/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/img/bit-alpha.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/img/bit-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/img/full-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/img/many-colors-bit-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/img/many-colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color/img/bit-alpha.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color/img/bit-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color/img/full-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color/img/many-colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-with-output-dir/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/large-repeat/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/large-repeat/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/layout-properties-from-sprite-image-directive/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/layout-properties-from-sprite-image-directive/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/layout-properties-from-sprite-image-directive/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/matte-color/img/bit-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/matte-color/img/full-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/matte-color/img/many-colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/missing-images/img/top-frame.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/missing-images/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/non-default-output-dir/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/non-default-output-dir/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/overriding-css-properties/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/overriding-css-properties/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/overriding-css-properties/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/border-bottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/border-top.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/bulb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/c2-background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/c2-logo-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/c2-logo-startup.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-bl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-br.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-t.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-tl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-big-tr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-bl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-br.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-t.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-tl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/glow-small-tr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/google.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/information.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/jobs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/msn.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-active-body.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-active-lead-in.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-active-lead-out.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-active-passive-link.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-passive-active-link.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-passive-body.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-passive-lead-in.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-passive-lead-out.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/tab-passive-passive-link.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/img/yahoo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/repeated-image-references/img/web-margin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/repeated-image-references/img/web.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/scaled-sprite-fractional/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/scaled-sprite/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite-important/img/full-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite-important/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite-important/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite-important/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-centering/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5-ie6/img/full-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-margins/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/target-sprite-image-dir-not-exists/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-image-format/img/web.iff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-sprite-properties/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-sprite-properties/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-sprite-properties/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/variable-substitution-in-sprite-image-path/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/variable-substitution-in-sprite-image-path/img/pubmed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/variable-substitution-in-sprite-image-path/img/web.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/www.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/README.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/css/default-sprite.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/download.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/doc/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/smartsprites.LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/smartsprites.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/smartsprites.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/smartsprites.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/absolute-image-url/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/absolute-image-url/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-in-subfolders/css/library/common-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-in-subfolders/css/library/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-in-subfolders/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-in-subfolders/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-output-dir/css/sprite/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/css-output-dir/css/sprite/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/example-from-the-website/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color-ie6/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/indexed-color/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-with-output-dir/css-other/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-with-output-dir/css/custom/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-with-output-dir/css/custom/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-with-output-dir/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-with-output-dir/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/css-other/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/css-other/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/css/custom/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/css/custom/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/individual-css-files-without-output-dir/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/large-repeat/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/large-repeat/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/layout-properties-from-sprite-image-directive/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/layout-properties-from-sprite-image-directive/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/matte-color/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/matte-color/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/missing-images/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/missing-images/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/css/style2-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/multiple-css-files/css/style2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/no-sprite-declarations/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/no-sprite-references/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/no-sprite-references/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/non-default-output-dir/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/non-default-output-dir/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/overriding-css-properties/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/overriding-css-properties/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/css/common-ie6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/css/common-ie7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/css/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/carrot2.layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/carrot2.tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/carrot2.util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/jquery-1.2.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/jquery.dimensions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/ui.mouse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/ui.sortable.ext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/js/ui.sortable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/tabs-sprite.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/real-world-example/tabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/repeated-image-references/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/repeated-image-references/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/scaled-sprite-fractional/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/scaled-sprite-fractional/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/scaled-sprite/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/scaled-sprite/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite-important/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite-important/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/simple-horizontal-sprite/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-centering/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-centering/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5-ie6/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5-ie6/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-image-uid-md5/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-margins/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/sprite-margins/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/target-sprite-image-dir-not-exists/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/target-sprite-image-dir-not-exists/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-image-format/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-image-format/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-sprite-properties/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/unsupported-sprite-properties/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/variable-substitution-in-sprite-image-path/css/style-expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartsprites-0.2.11/test/variable-substitution-in-sprite-image-path/css/style.css" />
+    <list default="true" id="e5a5533e-5092-439c-8c04-d73b37a73499" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testgit" afterPath="$PROJECT_DIR$/testgit" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -728,7 +510,7 @@
       <workItem from="1481876042961" duration="4711000" />
       <workItem from="1482109311265" duration="6631000" />
       <workItem from="1482203863259" duration="8046000" />
-      <workItem from="1482228854845" duration="7621000" />
+      <workItem from="1482228854845" duration="7980000" />
     </task>
     <task id="LOCAL-00001" summary="continue">
       <created>1482298734036</created>
@@ -737,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482298734036</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="continue">
+      <created>1482299772337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1482299772337</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="528727000" />
+    <option name="totallyTimeSpent" value="529086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,7 +549,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3477589" sideWeight="0.5031201" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -794,6 +583,24 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
