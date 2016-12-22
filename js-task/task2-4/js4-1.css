@@ -66,7 +66,7 @@ body{
     float:left;
     background: #f0f0f0;
     width: 20%;
-    height:50rem;
+    height: 71rem;
     border-right: 1px solid white;
     margin-bottom: 2rem;
 }
@@ -74,9 +74,23 @@ body{
     float:left;
     background: #f0f0f0;
     width: 80%;
-    height: 50rem;
+
     margin-bottom: 2rem;
+    text-align: center;
+}
+.main-right button{
+    outline: none;
 }
 .box{
-
+    background-color: #29bde0;
+    width: 60%;
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    padding:1.5rem;
+    cursor: pointer;
+}
+.space{
+    height: 5rem;
 }
