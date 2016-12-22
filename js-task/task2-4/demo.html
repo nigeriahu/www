@@ -9,6 +9,15 @@
             document.getElementById('textInput').value=val;
         }
     </script>
+    <style>
+        .main-left span{
+            width: 0;
+            height: 0;
+            border-top: 1rem solid transparent;
+            border-bottom: 1rem solid transparent;
+            border-right: 1.5rem solid #24a7c6;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,6 +37,8 @@
 <br />
 <input type="button" onclick="getInnerHTML()"
        value="Alert innerHTML of table row" />
+
+<div class="main-left"><span></span></div>
 
 
 </body>

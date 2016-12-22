@@ -25,5 +25,5 @@ for(i=0;i<all.length;i++){
 
 
 function start() {
-    location.href="js4.html";
+    location.href="js4-1.html";
 }
