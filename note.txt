@@ -1,24 +1,34 @@
+HV7BJ-R6GCT-VHBXD-YH4FD-GTH2T
+MS激活码
 2016-11-15
-    �ƶ��˲����ر�Ҫע��box������Ҫ��border-box(���bootstrap�Ѿ�����)��������overflow: hidden���Է�ֹһЩ�������ش��Ҳ���;�����ðٷֱ���д,һЩ�̶����ȵĵط��ȴ�Ĳ���д�����ڵ���,��λ�Ļ����ѡrem,rem�Ǹ��ݸ�Ԫ��html��font-size��ȷ����;���ҳ�治��Ҫ����ƥ��ܶ��豸�Ļ�Ҳ����px,ʹ����bootstrap��դ��ϵͳ�����в���,�ҵ�һ���Ӽ�������Ӧ���ߵ�ʱ����в��ֵİ취����������position: relative;�Ӽ�����position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);ʹ�þ��Բ��ֲ�Ӱ��������Ԫ�غ�ʵ��.
+    移动端布局特别要注意box的类型要是border-box(这点bootstrap已经做了)并且设置overflow: hidden可以防止一些不定因素打乱布局
 
-������������input[type=range]::-webkit-slider-thumb�ı���ͼƬ���ﵽ��Ƶ�Ч��.
-js���������.
+;宽度用百分比来写,一些固定宽度的地方等大的布局写完了在调试,单位的话最好选rem,rem是根据根元素html的font-size来确定的;如果页
 
-��������Bootstrap
+面不是要做成匹配很多设备的话也可用px,使用了bootstrap的栅格系统来进行布局,找到一个子级是自适应宽高的时候居中布局的办法给父
+
+级设置position: relative;子级设置position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);使用绝对布局不影响其他的
+
+元素很实用.
+
+进度条：设置input[type=range]::-webkit-slider-thumb的背景图片来达到设计的效果.
+js的随机排序.
+
+深入理解Bootstrap
 
 2016-12-5
-vw��viewpoint width���Ӵ����ȣ�1vw�����Ӵ����ȵ�1%��
-vh��viewpoint height���Ӵ��߶ȣ�1vh�����Ӵ��߶ȵ�1%��
-vmin��vw��vh�н�С���Ǹ���
-vmax��vw��vh�нϴ���Ǹ���
+vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
+vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。
+vmin：vw和vh中较小的那个。
+vmax：vw和vh中较大的那个。
 
-��ͼƬ���div�ã�
+让图片填充div用：
 filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
 -moz-background-size:100% 100%; 
 background-size:100% 100%;
 2016-12-6
 CSS
-С���ǵ�����������div��������id="tri"����CSS������div����style���棬ʹ��border���Զ�div���п��ƣ�
+小三角的做法：布局div，并命名id="tri"，用CSS来控制div，在style里面，使用border属性对div进行控制，
 #tri{
 width: 0px;
 height: 0px;
@@ -28,322 +38,759 @@ height: 0px;
    border-left: 400px solid yellow;
 }
 ------------------
-display���÷������
-inline-block���������ֵ�����ã����ǽ�Ԫ�ر�Ϊ�ܹ����ÿ��ߵ���Ԫ�أ����һ��Ԫ�ص�display����ֵ�����ó�Ϊinline-block����ô��Ϳ��Զ����Ԫ�����ÿ��͸�.
-none	��Ԫ�ز��ᱻ��ʾ��
-block	��Ԫ�ؽ���ʾΪ�鼶Ԫ�أ���Ԫ��ǰ�����л��з���
-inline	Ĭ�ϡ���Ԫ�ػᱻ��ʾΪ����Ԫ�أ�Ԫ��ǰ��û�л��з���
-inline-block	���ڿ�Ԫ�ء���CSS2.1 ������ֵ��
-list-item	��Ԫ�ػ���Ϊ�б���ʾ��
+display的用法与分类
+inline-block的这个属性值的作用，它是将元素变为能够设置宽高的行元素，如果一个元素的display属性值被设置成为inline-block，那么
 
-box����������Ϊ������������ʾ�������������ϰ汾����CSS3��
-inline-box����������Ϊ�����鼶������������ʾ�������������ϰ汾����CSS3��
-flexbox����������Ϊ������������ʾ���������й��ɰ汾����CSS3��
-inline-flexbox����������Ϊ�����鼶������������ʾ���������й��ɰ汾����CSS3��
-flex����������Ϊ������������ʾ�������������°汾����CSS3��
-inline-flex����������Ϊ�����鼶������������ʾ��
+你就可以对这个元素设置宽和高.
+none	此元素不会被显示。
+block	此元素将显示为块级元素，此元素前后会带有换行符。
+inline	默认。此元素会被显示为内联元素，元素前后没有换行符。
+inline-block	行内块元素。（CSS2.1 新增的值）
+list-item	此元素会作为列表显示。
+
+box：将对象作为弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）
+inline-box：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）
+flexbox：将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）
+inline-flexbox：将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）
+flex：将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3）
+inline-flex：将对象作为内联块级弹性伸缩盒显示。
 ------------------
-ȥ��display��϶������font-size:0��ʹ��margin��ֵ��
+去除display间隙：父级font-size:0；使用margin负值：
 
 ------------------
-��ע�⡿div�ĳ�����Ϊ0��borderΪ�߿򣬻ῴ�������ĸ�����״��ͼ�Ρ�
+【注意】div的长宽设为0，border为边框，会看到如下四个三角状的图形。
 JS
-input[type="range"]��������JS����Ч����ͬʱͬ��range���Ϸ��������ֵ�input��
-input��Ҫ����onkeyup��ͬ�������Ż�ִ�У�����ſ��Ժ�����������ͬ��
+input[type="range"]部分添加JS动画效果，同时同步range和上方输入数字的input框
+input框要引用onkeyup，同步函数才会执行，滑块才可以和输入框的数字同步
 
 12-9
-�������Լ����и��ߵ�Ҫ�󣬿����о������߹��ߵġ�Դ��(Sources)�������նϵ㡢����ִ�еȸ߼����Լ���
-NaN; // NaN��ʾNot a Number�����޷�������ʱ��NaN��ʾ
-Ψһ���ж�NaN�ķ�����ͨ��isNaN()����   isNaN(NaN); // true
-avaScript�������ϣ����null��ʾһ���յ�ֵ����undefined��ʾֵδ���塣��ʵ֤�����Ⲣû��ʲô���ã��������ߵ����岻�󡣴��������£����Ƕ�Ӧ����null��undefined�������жϺ��������Ƿ񴫵ݵ���������á�
-Map��һ���ֵ�ԵĽṹ�����м���Ĳ����ٶȡ�
+如果你对自己还有更高的要求，可以研究开发者工具的“源码(Sources)”，掌握断点、单步执行等高级调试技巧
+NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示
+唯一能判断NaN的方法是通过isNaN()函数   isNaN(NaN); // true
+avaScript的设计者希望用null表示一个空的值，而undefined表示值未定义。事实证明，这并没有什么卵用，区分两者的意义不大。大多
+
+数情况下，我们都应该用null。undefined仅仅在判断函数参数是否传递的情况下有用。
+Map是一组键值对的结构，具有极快的查找速度。
 12-12
-������ ��literal������ֱ����js������д���������ݡ�
-����object����һ�ַǳ���Ҫ���������ͣ��������԰��������ݼ��ϣ������ڶ���������ݼ��Ͽ���ͨ��������ʽ���ʡ������ԣ�property���ͷ�����method��������������ĳ���ض�����ı�����������ֻ��ĳ���ض�������ܵ��õĺ��������Ժͷ�����ʹ�á��㡰�﷨�����ʡ�
-ʵ����instance���Ƕ���ľ�����塣Ϊ�������󴴽�һ����ʵ����Ҫʹ��new�ؼ��֡��û��������user-defined-object���������������õĶ����Ϊ�ڽ�����native-object���� Array������Array������length���ԡ�
-webӦ�û�����������ṩ��һЩ��ͬ��js���Ե��ڽ�����һЩ�Ѿ�Ԥ�ȶ���õ��������󣬼�������ṩ��Ԥ������󱻳�Ϊ��������host object��������document��Form��Image��Element�ȡ�
-DOM����������ҳ�����ݽ���ˢ��ȴ����Ҫ���������ˢ��ҳ�棬�ȼ����ĵ��ľ�̬���ݣ��ٶ�̬ˢ�£���̬ˢ�²�Ӱ���ĵ��ľ�̬���ݡ�
-Javascript�в������������а����ո���㸽��$���⣩��������������������ĸ�����֡���Ԫ���ź��»��ߣ���һ���ַ������������֣���Ϊ�˱����Ķ��������ڱ��������ʵ�λ�ò����»��ߣ���һ�ַ�ʽ��ʹ���շ�ʽ��camel case����ɾ���м�Ŀհס��»��ߣ������ÿ���µ��ʸ��ô�ϲ��ĸ��ͷ��ͨ���շ��ʽ�Ǻ��������������Ͷ�����������������ѡ��ʽ��
-generator����������һ��generator����ȥ��һ�������������Է��ض�Ρ�
-�������ʽ��һ������ƥ���ַ�����ǿ�������������������˼������һ�������Ե����������ַ�������һ�����򣬷��Ƿ��Ϲ�����ַ��������Ǿ���Ϊ����ƥ�䡱�ˣ����򣬸��ַ������ǲ��Ϸ��ġ�
-���������ʽ�У����ֱ�Ӹ����ַ������Ǿ�ȷƥ�䡣��\d����ƥ��һ�����֣�\w����ƥ��һ����ĸ�����֣�.����ƥ�������ַ���^��ʾ�еĿ�ͷ��^\d��ʾ���������ֿ�ͷ��
+字面量 （literal）可以直接在js代码中写出来的数据。
+对象（object）是一种非常重要的数据类型，对象是自包含的数据集合，包含在对象里的数据集合可以通过两种形式访问——属性
 
-$��ʾ�еĽ�����\d$��ʾ���������ֽ�����
+（property）和方法（method）：属性是属于某个特定对象的变量；方法是只有某个特定对象才能调用的函数。属性和方法都使用”点“
 
-AJAX����JavaScript�Ĺ淶����ֻ��һ�����ǡ�����������д��Asynchronous JavaScript and XML����˼������JavaScriptִ���첽��������
-���ִ��������дAJAX��Ҫ����XMLHttpRequest����
+语法来访问。
+实例（instance）是对象的具体个体。为给定对象创建一个新实例需要使用new关键字。用户定义对象（user-defined-object），可以拿
 
-jQuery�ܰ����Ǹ���Щ���飺
-������������죺�㲻��Ҫ�Լ�д�߳��Ĵ�������Բ�ͬ������������¼�����дAJAX�ȴ��룻
-���Ĳ���DOM�ķ�����д$('#test')�϶���document.getElementById('test')���ü�ࣻ
-����ʵ�ֶ������޸�CSS�ȸ��ֲ�����
-jQuery�����Write Less, Do More��������д���ٵĴ��룬��ɸ���Ĺ�����
-ʹ��jQueryֻ��Ҫ��ҳ���<head>����jQuery�ļ����ɣ�<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-$��������jQuery���š�ʵ���ϣ�jQuery�����й���ȫ����װ��һ��ȫ�ֱ���jQuery�У���$Ҳ��һ���Ϸ��ı����������Ǳ���jQuery�ı�����
+来就用的对象称为内建对象（native-object）如 Array（）；Array对象有length属性。
+web应用环境即浏览器提供的一些不同于js语言的内建对象，一些已经预先定义好的其他对象，即浏览器提供的预定义对象被称为宿主对象
+
+（host object）；包括document、Form、Image和Element等。
+DOM的威力：对页面内容进行刷新却不需要在浏览器里刷新页面，先加载文档的静态内容，再动态刷新，动态刷新不影响文档的静态内容
+
+。
+Javascript中不允许变量名中包含空格或标点附后（$除外）；变量名中允许包含字母、数字、美元符号和下划线（第一个字符不允许是数
+
+字）；为了便于阅读，可以在变量名中适当位置插入下划线，另一种方式是使用驼峰式（camel case），删除中间的空白、下划线，后面
+
+的每个新单词改用大喜字母开头。通常驼峰格式是函数名、方法名和对象属性名命名的首选格式。
+generator（生成器）一个generator看上去像一个函数，但可以返回多次。
+正则表达式是一种用来匹配字符串的强有力的武器。它的设计思想是用一种描述性的语言来给字符串定义一个规则，凡是符合规则的字符
+
+串，我们就认为它“匹配”了，否则，该字符串就是不合法的。
+在正则表达式中，如果直接给出字符，就是精确匹配。用\d可以匹配一个数字，\w可以匹配一个字母或数字，.可以匹配任意字符，^表示
+
+行的开头，^\d表示必须以数字开头。
+
+$表示行的结束，\d$表示必须以数字结束。
+
+AJAX不是JavaScript的规范，它只是一个哥们“发明”的缩写：Asynchronous JavaScript and XML，意思就是用JavaScript执行异步网
+
+络请求。
+在现代浏览器上写AJAX主要依靠XMLHttpRequest对象。
+
+jQuery能帮我们干这些事情：
+消除浏览器差异：你不需要自己写冗长的代码来针对不同的浏览器来绑定事件，编写AJAX等代码；
+简洁的操作DOM的方法：写$('#test')肯定比document.getElementById('test')来得简洁；
+轻松实现动画、修改CSS等各种操作。
+jQuery的理念“Write Less, Do More“，让你写更少的代码，完成更多的工作！
+使用jQuery只需要在页面的<head>引入jQuery文件即可：<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+$是著名的jQuery符号。实际上，jQuery把所有功能全部封装在一个全局变量jQuery中，而$也是一个合法的变量名，它是变量jQuery的别
+
+名：
 window.jQuery; // jQuery(selector, context)
 window.$; // jQuery(selector, context)
 $ === jQuery; // true
 typeof($); // 'function'
-DOM���������Ǿ���ʹ�õĴ�����Ҫ�ݹ���������ӽڵ�    ���ߣ�$(#��ID������=document.getElementById����ID������jQuery��ѡ�������ǰ������ǿ��ٶ�λ��һ������DOM�ڵ㡣
-getElementById(): ��ȡ��ָ��ΩһID����ֵ�ĵ��е�Ԫ��
-getElementsByName(name): ���ص�������
-getElementsByTagName(): ���ؾ���ָ����ǩ����Ԫ����Ԫ�ؼ���
-getAttribute(): ����ָ��������������ֵ
+DOM操作中我们经常使用的代码需要递归查找所有子节点    后者；$(#‘ID’）；=document.getElementById（‘ID’）；jQuery的
+
+选择器就是帮助我们快速定位到一个或多个DOM节点。
+getElementById(): 获取有指定惟一ID属性值文档中的元素
+getElementsByName(name): 返回的是数组
+getElementsByTagName(): 返回具有指定标签名的元素子元素集合
+getAttribute(): 返回指定属性名的属性值
 document.getElementsByTagName("a")[0].getAttribute("target");
-setAttribute(): ����ָ�������ԣ���Ϊ�丳ָ����ֵ��
+setAttribute(): 添加指定的属性，并为其赋指定的值。
 document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
-�ڵ�����:
-�ڵ�����(ֻ��):nodeName
-�ڵ�ֵ: nodeValue
-�ڵ�����(ֻ��):nodeType
-�ӽڵ㣺
-ele.childNodes ��������
+节点属性:
+节点名称(只读):nodeName
+节点值: nodeValue
+节点类型(只读):nodeType
+子节点：
+ele.childNodes 返回数组
 firstChild
 lastChild
-���ڵ�
-parentNode ֻ��һ��
-�ֵܽڵ�
-nextSibling ĳ�ڵ�֮������Ľڵ�
+父节点
+parentNode 只有一个
+兄弟节点
+nextSibling 某节点之后紧跟的节点
 previousSibling
-����ڵ�
-appendChild() ���������
-insertBefore(newnode,node)��node�ڵ�֮ǰ
-ɾ���ڵ�
-removeChild(node) �ɹ����ر�ɾ���Ľڵ� ʧ�ܷ���null
-�滻Ԫ�ؽڵ�
-replaceChild(newnode,oldnode) ʵ���ӽڵ������滻
-����Ԫ�ؽڵ�
+插入节点
+appendChild() 插入在最后
+insertBefore(newnode,node)在node节点之前
+删除节点
+removeChild(node) 成功返回被删除的节点 失败返回null
+替换元素节点
+replaceChild(newnode,oldnode) 实现子节点对象的替换
+创建元素节点
 createElement()
-�����ı��ڵ�
+创建文本节点
 createTextNode()
-���ƽڵ�
-��Ҫ�����ƵĽڵ�.cloneNode(true/false)
-true���Ƶ�ǰ�ڵ㼫�������ӽڵ㣬false�����Ƶ�ǰ�ڵ�
+复制节点
+需要被复制的节点.cloneNode(true/false)
+true复制当前节点极其所以子节点，false仅复制当前节点
 
-��Node�����е�JavaScript���������˿��������к����ƣ�
-���������ǽ���JavaScript�������¼��������Ƽ�V8���������棬ʹ��д������Web��������׾١�
-REST��Representational State Transfer��
-���һ��URL���صĲ���HTML�����ǻ�����ֱ�ӽ��������ݣ����URL�Ϳ��Կ�����һ��Web API������ҳ��Ϊһ�ֿͻ��ˣ���REST�ܹ�����չ��һ���ؼ���
-������DOM�ڵ��ǿյģ����磬<div></div>����ô��ֱ��ʹ��innerHTML = '<span>child</span>'�Ϳ����޸�DOM�ڵ�����ݣ��൱�ڡ����롱���µ�DOM�ڵ㡣
-������DOM�ڵ㲻�ǿյģ��ǾͲ�����ô������ΪinnerHTML��ֱ���滻��ԭ���������ӽڵ㡣
-�������취���Բ����µĽڵ㡣һ����ʹ��appendChild����һ���ӽڵ����ӵ����ڵ�����һ���ӽڵ㡣
-�����JavaScript�ļ���ͷд��'use strict';����ôNode��ִ�и�JavaScriptʱ��ʹ���ϸ�ģʽ��
+在Node上运行的JavaScript相比其他后端开发语言有何优势？
+最大的优势是借助JavaScript天生的事件驱动机制加V8高性能引擎，使编写高性能Web服务轻而易举。
+REST（Representational State Transfer）
+如果一个URL返回的不是HTML，而是机器能直接解析的数据，这个URL就可以看成是一个Web API。把网页视为一种客户端，是REST架
+
+构可扩展的一个关键。
+如果这个DOM节点是空的，例如，<div></div>，那么，直接使用innerHTML = '<span>child</span>'就可以修改DOM节点的内容，
+
+相当于“插入”了新的DOM节点。
+如果这个DOM节点不是空的，那就不能这么做，因为innerHTML会直接替换掉原来的所有子节点。
+有两个办法可以插入新的节点。一个是使用appendChild，把一个子节点添加到父节点的最后一个子节点。
+如果在JavaScript文件开头写上'use strict';，那么Node在执行该JavaScript时将使用严格模式。
+2016-12-11
+存储参数和提取参数
+有限状态机
+JS状态机
+
+断点查询：sources ->Js文件->行号
+“逐语句执行”按钮、“逐过程执行”按钮、console控制台这三个工具
+我们调试bug的思路应该是这样的：首先，js是否成功的执行进来；其次，js是否存在逻辑问题，变量问题，参数问题等等；最后，如果上
+
+述都没有问题，请仔细查看各种符号。。。
+
+
+程序设计语言分为解释型和编译型两大类。解释型程序设计语言不需要编译器---仅需要解释器，即浏览器，浏览器中有JS解释器。解释型
+
+语言代码中的错误只能等到编译器执行到有关代码时才能被发现。java或C++等语言需要一个编译器，编译器是一种程序，能够把用java
+
+等高级语言编写出来的源代码翻译为直接在计算机上执行的文件。编译型语言编写的代码有错误，在代码编译阶段就能被发现。
+语句 statement   JS脚本中的指令文字就是语句
+注释 comment
+赋值 assignment
+声明 declare
+填充 populating
+实例 instance
+节点 node  文档是由节点构成的集合  节点有多种类型：元素节点、文本节点、属性节点
+·一个文档document就是一棵节点树
+·节点分为不同的类型：元素节点、文本节点、属性节点（attribute node）
+·getElementById 将返回一个对象，该对象对应着文档里的一个特定的元素节点。
+·getElementByTagName和getElementByclassName将返回一个数组，它们分别对应着文档里的一组特定的节点。
+·每个节点都是一个对象。
+insertBefore（）方法3个关键点：
+想插入的元素（newElement）；被插入的目标元素（targetElement）；被插入目标元素的父元素（parentElement）
+语法：parentElement.insertBefore(newElement,targetElement)
+
+Ajax 异步加载页面内容技术，类似地图，一点点加载。
+Ajax的优势：对页面的请求以异步方式发送到服务器，而服务器不会用整个页面来响应请求，它会在后台处理请求，与此同时用户还能继
+
+续浏览页面并与页面交互。脚本可以按需加载和创建页面内容，而不会打断用户的浏览体验，减少重复加载页面的次数。
+Ajax的技术核心是XMLHttpRequest对象，充当着浏览器中的脚本客户端与服务器之间的中间人角色。javascript通过XMLHttpRequest对
+
+象，自己发送请求、处理响应。
+Hijax：渐进增强的使用Ajax。hijack拦截用户操作触发的请求。
+Ajax主要依赖与服务器端处理，跟数据库中的数据对比，而非客户端处理。
+
+
+
+用对象来代替传统数组的做法意味着可以通过元素的名字而不是下标数字来引用他们。
+拿来就用的对象称为内建对象（native object），如Array[ ]\Math对象和Date对象。
+由浏览器提供的预定义对象称为宿主对象（host object），如Form Element Image等。Document也是宿主对象
+
+
+子节点：
+ele.childNodes 返回数组
+firstChild
+lastChild
+父节点
+parentNode 只有一个
+兄弟节点
+nextSibling 某节点之后紧跟的节点
+previousSibling
+插入节点
+appendChild() 插入在最后
+insertBefore(newnode,node)在node节点之前
+删除节点
+removeChild(node) 成功返回被删除的节点 失败返回null
+替换元素节点
+replaceChild(newnode,oldnode) 实现子节点对象的替换
+创建元素节点
+createElement()
+创建文本节点
+createTextNode()
+复制节点
+需要被复制的节点.cloneNode(true/false)
+true复制当前节点极其所以子节点，false仅复制当前节点
+
+Javascript语言特有的“链式作用域”结构（chain scope），
+子对象会一级一级地向上寻找所有父对象的变量。所以，父对象的所有变量，对子对象都是可见的，反之则不成立。
+闭包（closure）就是能够读取其他函数内部变量的函数。
+由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。
+所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。
+
+状态机的写法，逻辑清晰，表达力强，有利于封装事件。一个对象的状态越多、发生的事件越多，就越适合采用有限状态机的写法。
+12-13
+类越写越多最后才发觉，应该尽量多使用后代选择器或者子元素选择器代替增加新的类，减少新命名，简化代码。
+使用伪类before和after画css时必须要加上content: ""这个属性。
+:before和:after的作用就是在指定的元素内容（而不是元素本身）之前或者之后插入一个包含content属性指定内容的行内元素，所以
+
+content元素很重要，不能少。
+
+画图形时会用到绝对定位，绝对定位后before和after其实并无区别，都是相对于主体元素（主体元素设置position: relative;）的左上角进
+
+行定位，配合z-index可以做出一些效果
+
+项目流程：首先了解需求结合视图构造数据模型，与后端根据相应的数据情况定义接口，其次与后端约定好合理的时间点，完成相应的计
+
+划内容。若在约定好的时间点存在风险预估，需及时的找上一级汇报具体情况。然后，既然是前后端分离，在没有数据的情况下，要学会
+
+模拟数据，不能光在哪儿等后端来帮忙添加数据。最后不能够仅把自己限制在一个程序员上，老大更喜欢称其为工程师。因为，程序员听
+
+上去好像就是一个敲代码的，而工程师是对自己的工作内容有规划的进行，会沟通，知道实时的做出风险评估，担负着在规定时间完成任
+
+务的责任感。
+项目管理：明确自己在项目中遇到的那些问题，及时的更新到相应的管理表单上，通知相关人员，约定好在那个具体的时间点上能够解决
+
+问题或给予帮助。
+默认样式的重置方法，还有就是resetting 和 normalizing的区别
+
+一  前言
+
+员工手册其实就是Team的文化和性格，想了想，还是需要写点东西在里面，或者这么说，每一个新来的员工都请认真的看一下，你是否符
+
+合这些条件和要求。（李亚冲）
+ 
+ 
+二 责任
+
+对于Team里的每一个员工来说，责任永远是排在第一位的，什么叫责任。责任就是承担，就是当项目出现问题的时候，为这件事情最着急
+
+，想办法去解决问题的人，一定是你。
+如果你让我着急了，想办法去解决问题了，那么恭喜你，这表示你还只剩下一次机会。如果第二次仍然出现这种情况，我基本上不会考虑
+
+把你留下来了。
+ 
+我认真的，我不太想解释为什么会这么做，大概在我的性格之中，一直都是这么要求自己的，所以也希望自己的Team是这样的风格。
+要永远承担责任，要勇于推进事情的进展，要勇于承受责任带来的后果。
+ 
+还要记着，对于一个Team而已，面对不好的结果，每一个Team里的成员都有责任去承担最终的结果，这才能体会出一个Team的价值。
+
+而最终导致出现不好的结果的原因，也需要明确到每一个人身上，但是那只是为了下一次更好的成功。
+ 
+三  时间
+ 
+任何一件事情，我都希望你们学会主动跟别人沟通，不要让别人去给你们排时间，也不要让别人去催你，一件事情做到什么程度，一天知
+
+会一次是最低底线的要求。
+之前我写过一个关于怎么反馈时间的东西，具体的细节不说，但是做所有的事情，都必须有一个明确的时间点，当这个时间有变动的时候
+
+，需要及时的通知相关的人，解释原因，并且给出下一个预期的时间。
+ 
+这是个好习惯，也许你们现在理解不了，但是必须这么做。
+还要，要学会立刻去做一些现在就能做的事情，把所有的事情往前赶，而不是向后推。
+ 
+学会主动给自己安排时间，而不是让别人给你一个时间点，那会打乱你自己的计划，不要做一个听话的人，而是做一个主动的有良好的时
+
+间规划的人。
+ 
+四 价值
+ 
+做为Team的成员，你必须明确的知道自己能给Team带来什么样的价值，只有每一个员工都在为Team创造价值，整个Team才可能前进，
+
+我对你们每一个人都说过，未来的发展并不取决于我，也不取决于其他任何一个人，而是取决于我们，我们每一个Team的成员。
+未来是掌握在自己手中的，只有每一个人都发挥出自己的价值，我们才有可能实现自己的个人价值。
+我希望你们每一个人都能知道自己对于团队的价值，明确自身的定位，并且不断的把自己的价值最大化。
+ 
+先是在某一个领域成为专家，让自己成为不可替代的人，再让自己横向扩展，成为一个博学的人。善于学习，不断寻找自己内心强大的动
+
+力，不要停下来，人生的乐趣就在于选择自己喜欢的生活方式，所以记着，放弃永远是一个不会失去的选择，而坚持往往只会有一次，一
+
+旦你不再坚持，恐怕很难再找到坚持的机会。
+ 
+ 
+ 
+ 
+五 条理
+
+做事情要有条理，我们尽可能的在同一时间内只做一件事，以保证能够集中精力，不被打扰。但是很多时候事与愿违，以我自己为例，最
+
+多的时候一天同时要处理40件事。所以必须要做事有条理性，所有的事情都简单按两个维度分成四类。1 重要程度：重要的和不重要的  2 
+
+紧急程度：紧急的和非紧急的 顺序依次是：紧急又重要的，重要但不紧急的，紧急但不重要的，不紧急也不重要的。
+学会用一些便签工具将自己做的事情做成ToDoList，每日打勾，有进展去标注。让自己的工作变的透明化，以便于减少其他人的沟通环节
+
+。
+同时，要记得说细节，无论是在日报里还是在和别人交流和时候，学会排序，规纳，总结。
+ 
+六  结果
+ 
+结果永远是最重要的。这句话有的时候并不合适，然而我想永远不能忘记结果，而回到第一条，实际上我需要你们为结果负责。结果体现
+
+在无数地方，但是对于项目来讲，最明显的结果就是时间周期和代码质量。
+这些都是至关重要的。
+ 
+在结果面前，一切原因都不够重要。所有的原因都只是我们用来不断反思总结，然后不停的去优化下一次的结果。不要害怕结果不好，比
+
+最坏的结果最坏的就是我们不知道该怎么去改进它。
+ 
+七 尝试
+
+不要停止尝试新的东西。不要让自己已经学会的东西成为自己的负担。
+不要跟我讲，这个东西我不会，要记着你们刚开始本来就是什么都不会。
+互联网时代每天都会有新的东西，总有旧的技术体系或者是观点被抛弃，新的框架和语言会诞生，不要停留在过去，无论你多大年纪，勇
+
+于去学习新鲜的事务，千万不要让自己已有的知识体系成为你了解新东西的壁垒。
+ 
+八 反思
+
+我希望你们养成一个不断反思的习惯。日报和周报都是这个道理，我时不时的找你们聊天，找你们去沟通，去问你们的进展，有什么做的
+
+好的，有什么做的不好的，也是同样的道理。
+经常在灵魂深处看清自己，活的清醒一些，而不是浑浑噩噩。这需要一个习惯性的总结，反思的时候要注意几个比较重要的地方：一 我在
+
+过去都做了什么事儿 二 哪些是对的，哪些是错的 三为什么当时没想到更好的办法，为什么自己会犯错误 四 有没有从错误中收获价值。
+ 
+九 交流
+ 
+学会和别人交流，学会有智慧的求助于别人。当你在工作中，你需要和很多人都有交流和交集，不要一个人去战斗。你身边的都是可以跟
+
+你同生共死的兄弟，对于一个初创团队来讲，这格外的重要。
+不过要记得每个人都有自己弱点和长处，都有他好的一面和不好的一面。
+ 
+还要学会热情助人，将自己所学所会的尽可能的指点给新人，一是因为这是一个很好的传承，二是因为这是对你自己知识体系的一次巩固
+
+和积累。
+ 
+十 流程
+学会制订和遵守流程。流程其实和编程里的模式很相似，流程是我们错过无数次，总结出来的提高我们工作效率的方式。记着这是流程的
+
+最佳作用，它是用来提高我们的工作效率，避免我们犯下重复的错的。
+所以每一个流程的制订，其实都是对于一件事情的整体梳理，每一次流程的演化，都代表我们对于这一类事情又有了新的认知。遵守流程
+
+，并且不断的去优化它。
+ 
+12-17
+自我理解：所有的标签<>都是元素的标签（比如p）是元素element
+两个标签tag构成节点node
+JS使用window对象的open（）方法来创建新的浏览器窗口要有3个可选参数：window.open(url,name,features)
+FTP/HTTP 协议时用来在因特网上的计算机之间传输数据包。
+伪协议pseudo-protocol是一种非标准化的协议。
+js文件放在末尾，原因：HTTP规范，浏览器每次从同一个域名中最多只能同时下载两个文件，在下载脚本期间，浏览器不会下载其他任何
+
+文件，即使是来自不同域名的文件也不会下载，所有其他资源都要等脚本加载完毕后才能下载，所以把所有<script>标签都放到文档的末
+
+尾，</body>标记之前，就可以让页面变得更快。即使这样，在加载脚本时，window对象的load事件依然可以执行对文档进行的各种操
+
+作。
+压缩脚本，提高速度，即将js文档里的空格注释删除。
+
+Jquery
+jQuery库本质上还是JavaScript代码，它只是对JavaScript语言进行包装处理，为的是提供更好更方便快捷的DOM处理与开发中经常使用
+
+的功能。我们使用jQuery的同时也能混合JavaScript原生代码一起使用。在很多场景中，我们需要jQuery与DOM能够相互的转换，它们都
+
+是可以操作的DOM元素，jQuery是一个类数组对象，而DOM对象就是一个单独的DOM元素。
+通配符*意味着给所有的元素设置默认的边距。jQuery中我们也可以通过传递*选择器来选中文档页面中的元素。
+
+$（document）.ready的作用是等页面的文档中的阶段全部加载完毕后，再执行后续的代码，因为我们在执行代码的时候，可能会依赖代
+
+码的某一个原始，我们要确保这个元素真正的被加载完毕后才能正确的使用。
+12-18
+定义列表 dl dlist
+定义标题 dt dtitle
+定义描述 dd ddescription
+
+12-22
+常用的居中方式有两种一种是text-align：center；另一个是margin：auto；前者影响父元素，后者影响子元素。但是两者子元素不能被
+
+浮动影响，否则失效。那么浮动了该怎么办呢？没关系！没有什么事是一个position解决不了的，如果有那就两个。（其实就是要放两个）
+
+但是某些浏览器可能会出现错位，所以出现这种情况不妨加上width和height试试。那么如何用position居中呢？首先给子元素top50%；
+
+left：50%；然后给margin-top：一半的height值的负数；margin-left：一半的weight值的负数。这个方法很好用，但是前提是一定要知
+
+道父元素的width和height。以上是常用的水平居中方法，下面再了解了一下垂直居中，我们常用的垂直居中自然是vertical-align：
+
+middle；但是这个方法限制条件很多，元素的状态有inline，inline-block，block三种，vertical-align只亲近前面两种。但是就算是前面
+
+两种元素也有不能垂直居中的时候，那是可能是因为有浮动。所以一定要仔细！除了这个垂直居中的方法还有line-height，但是仅限文字
+
+，很可惜。还有position就不多提了。接下来给一种用margin：auto来实现垂直居中的方法！
+#想用css写隐藏导航栏（暂时还没写），所以简单的说一下隐藏的问题。display：none；和visiblity：hidden；这两者的区别，简单来说
+
+就是display：none；是直接消失，看不见摸不着，所占空间不保留。visiblity：hidden；是看不见但摸得着，也就是所占有的空间还保留
+
+着。但是，元素的特性都消失了！举个例子，将按钮用这两个属性隐藏后，按钮的属性就消失了，就无法点击了。那么如何能隐藏元素同
+
+时还能保留属性呢？很简单，用opacity将透明度降到0就可以了。这样既能隐藏元素又能保留属性。
+2016-11-15
+    移动端布局特别要注意box的类型要是border-box(这点bootstrap已经做了)并且设置overflow: hidden可以防止一些不定因素打乱布局;宽度用百分比来写,一些固定宽度的地方等大的布局写完了在调试,单位的话最好选rem,rem是根据根元素html的font-size来确定的;如果页面不是要做成匹配很多设备的话也可用px,使用了bootstrap的栅格系统来进行布局,找到一个子级是自适应宽高的时候居中布局的办法给父级设置position: relative;子级设置position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);使用绝对布局不影响其他的元素很实用.
+
+进度条：设置input[type=range]::-webkit-slider-thumb的背景图片来达到设计的效果.
+js的随机排序.
+
+深入理解Bootstrap
+
+2016-12-5
+vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
+vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。
+vmin：vw和vh中较小的那个。
+vmax：vw和vh中较大的那个。
+
+让图片填充div用：
+filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+-moz-background-size:100% 100%; 
+background-size:100% 100%;
+2016-12-6
+CSS
+小三角的做法：布局div，并命名id="tri"，用CSS来控制div，在style里面，使用border属性对div进行控制，
+#tri{
+width: 0px;
+height: 0px;
+   border-top: 400px solid red;
+   border-right: 400px solid blue;
+   border-bottom: 400px solid green;
+   border-left: 400px solid yellow;
+}
+------------------
+display的用法与分类
+inline-block的这个属性值的作用，它是将元素变为能够设置宽高的行元素，如果一个元素的display属性值被设置成为inline-block，那么你就可以对这个元素设置宽和高.
+none	此元素不会被显示。
+block	此元素将显示为块级元素，此元素前后会带有换行符。
+inline	默认。此元素会被显示为内联元素，元素前后没有换行符。
+inline-block	行内块元素。（CSS2.1 新增的值）
+list-item	此元素会作为列表显示。
+
+box：将对象作为弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）
+inline-box：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）
+flexbox：将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）
+inline-flexbox：将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）
+flex：将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3）
+inline-flex：将对象作为内联块级弹性伸缩盒显示。
+------------------
+去除display间隙：父级font-size:0；使用margin负值：
+
+------------------
+【注意】div的长宽设为0，border为边框，会看到如下四个三角状的图形。
+JS
+input[type="range"]部分添加JS动画效果，同时同步range和上方输入数字的input框
+input框要引用onkeyup，同步函数才会执行，滑块才可以和输入框的数字同步
+
+12-9
+如果你对自己还有更高的要求，可以研究开发者工具的“源码(Sources)”，掌握断点、单步执行等高级调试技巧
+NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示
+唯一能判断NaN的方法是通过isNaN()函数   isNaN(NaN); // true
+avaScript的设计者希望用null表示一个空的值，而undefined表示值未定义。事实证明，这并没有什么卵用，区分两者的意义不大。大多数情况下，我们都应该用null。undefined仅仅在判断函数参数是否传递的情况下有用。
+Map是一组键值对的结构，具有极快的查找速度。
+12-12
+字面量 （literal）可以直接在js代码中写出来的数据。
+对象（object）是一种非常重要的数据类型，对象是自包含的数据集合，包含在对象里的数据集合可以通过两种形式访问——属性（property）和方法（method）：属性是属于某个特定对象的变量；方法是只有某个特定对象才能调用的函数。属性和方法都使用”点“语法来访问。
+实例（instance）是对象的具体个体。为给定对象创建一个新实例需要使用new关键字。用户定义对象（user-defined-object），可以拿来就用的对象称为内建对象（native-object）如 Array（）；Array对象有length属性。
+web应用环境即浏览器提供的一些不同于js语言的内建对象，一些已经预先定义好的其他对象，即浏览器提供的预定义对象被称为宿主对象（host object）；包括document、Form、Image和Element等。
+DOM的威力：对页面内容进行刷新却不需要在浏览器里刷新页面，先加载文档的静态内容，再动态刷新，动态刷新不影响文档的静态内容。
+Javascript中不允许变量名中包含空格或标点附后（$除外）；变量名中允许包含字母、数字、美元符号和下划线（第一个字符不允许是数字）；为了便于阅读，可以在变量名中适当位置插入下划线，另一种方式是使用驼峰式（camel case），删除中间的空白、下划线，后面的每个新单词改用大喜字母开头。通常驼峰格式是函数名、方法名和对象属性名命名的首选格式。
+generator（生成器）一个generator看上去像一个函数，但可以返回多次。
+正则表达式是一种用来匹配字符串的强有力的武器。它的设计思想是用一种描述性的语言来给字符串定义一个规则，凡是符合规则的字符串，我们就认为它“匹配”了，否则，该字符串就是不合法的。
+在正则表达式中，如果直接给出字符，就是精确匹配。用\d可以匹配一个数字，\w可以匹配一个字母或数字，.可以匹配任意字符，^表示行的开头，^\d表示必须以数字开头。
+
+$表示行的结束，\d$表示必须以数字结束。
+
+AJAX不是JavaScript的规范，它只是一个哥们“发明”的缩写：Asynchronous JavaScript and XML，意思就是用JavaScript执行异步网络请求。
+在现代浏览器上写AJAX主要依靠XMLHttpRequest对象。
+
+jQuery能帮我们干这些事情：
+消除浏览器差异：你不需要自己写冗长的代码来针对不同的浏览器来绑定事件，编写AJAX等代码；
+简洁的操作DOM的方法：写$('#test')肯定比document.getElementById('test')来得简洁；
+轻松实现动画、修改CSS等各种操作。
+jQuery的理念“Write Less, Do More“，让你写更少的代码，完成更多的工作！
+使用jQuery只需要在页面的<head>引入jQuery文件即可：<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+$是著名的jQuery符号。实际上，jQuery把所有功能全部封装在一个全局变量jQuery中，而$也是一个合法的变量名，它是变量jQuery的别名：
+window.jQuery; // jQuery(selector, context)
+window.$; // jQuery(selector, context)
+$ === jQuery; // true
+typeof($); // 'function'
+DOM操作中我们经常使用的代码需要递归查找所有子节点    后者；$(#‘ID’）；=document.getElementById（‘ID’）；jQuery的选择器就是帮助我们快速定位到一个或多个DOM节点。
+getElementById(): 获取有指定惟一ID属性值文档中的元素
+getElementsByName(name): 返回的是数组
+getElementsByTagName(): 返回具有指定标签名的元素子元素集合
+getAttribute(): 返回指定属性名的属性值
+document.getElementsByTagName("a")[0].getAttribute("target");
+setAttribute(): 添加指定的属性，并为其赋指定的值。
+document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
+节点属性:
+节点名称(只读):nodeName
+节点值: nodeValue
+节点类型(只读):nodeType
+子节点：
+ele.childNodes 返回数组
+firstChild
+lastChild
+父节点
+parentNode 只有一个
+兄弟节点
+nextSibling 某节点之后紧跟的节点
+previousSibling
+插入节点
+appendChild() 插入在最后
+insertBefore(newnode,node)在node节点之前
+删除节点
+removeChild(node) 成功返回被删除的节点 失败返回null
+替换元素节点
+replaceChild(newnode,oldnode) 实现子节点对象的替换
+创建元素节点
+createElement()
+创建文本节点
+createTextNode()
+复制节点
+需要被复制的节点.cloneNode(true/false)
+true复制当前节点极其所以子节点，false仅复制当前节点
+
+在Node上运行的JavaScript相比其他后端开发语言有何优势？
+最大的优势是借助JavaScript天生的事件驱动机制加V8高性能引擎，使编写高性能Web服务轻而易举。
+REST（Representational State Transfer）
+如果一个URL返回的不是HTML，而是机器能直接解析的数据，这个URL就可以看成是一个Web API。把网页视为一种客户端，是REST架构可扩展的一个关键。
+如果这个DOM节点是空的，例如，<div></div>，那么，直接使用innerHTML = '<span>child</span>'就可以修改DOM节点的内容，相当于“插入”了新的DOM节点。
+如果这个DOM节点不是空的，那就不能这么做，因为innerHTML会直接替换掉原来的所有子节点。
+有两个办法可以插入新的节点。一个是使用appendChild，把一个子节点添加到父节点的最后一个子节点。
+如果在JavaScript文件开头写上'use strict';，那么Node在执行该JavaScript时将使用严格模式。
 
 16-12-13
-�������JavaScript��ECMAScript��ʵ�ֺ���չ����ECMA��һ������W3C�ı�׼��֯��������б�׼����ECMAScript�����ˣ�
+编程语言JavaScript是ECMAScript的实现和扩展，由ECMA（一个类似W3C的标准组织）参与进行标准化。ECMAScript定义了：
 http://es6.ruanyifeng.com
-�����﷨ �C �﷨�������򡢹ؼ��֡���䡢������������ȡ�
-���� �C �����͡����֡��ַ���������ȡ�
-ԭ�ͺͼ̳�
-�ڽ�����ͺ����ı�׼�� �C JSON��Math�����鷽����������ʡ�����ȡ�
-Math.random���������0-1֮�������С����
-Array ���������ڵ����ı����д洢���ֵ����js-2��localStorage��Ҫ�õ���
-��localStorage���洢���ݵ�һЩ���� 
-localStorage�洢����
-localStorage.name = localStorage["name"]='vanida'��localStorage.setItem("name","vanida");//����������ֵ��ʽ��һ���ģ�
-localStorage��ȡֵ����
-var name = localStorage["name"] = localStorage.name�� localStorage.getItem("name");//�����ֻ�ȡֵ��ʽ��һ���ģ�
-localStorage��ֵ����
-localStorage.removeItem("name");����localStorage.name��'';//���name��ֵ
-localStorageֻ�ܴ洢�ַ����������Ҫ�洢��������Ҫת��Ϊ�ַ���������JSON.stringify()��Ȼ��ȡ��person�Ķ����������JSON.parse();
-���ش洢�⣬����localStorage������sessionStorage.
-��1��localStorage��sessionStorage���������洢�ͻ�����ʱ��Ϣ�Ķ���
-��2��localStorage��sessionStorage��ֻ�ܴ洢�ַ������͵Ķ���
-��3��localStorage�������������ã������û��ֶ����localStorage��Ϣ��������Щ��Ϣ����Զ���ڡ�
-��4��sessionStorage��������Ϊ��ǰ���ڻ��ǩҳ��һ�����ڻ��ǩҳ�����ùر��ˣ���ôͨ��sessionStorage�д洢������Ҳ�ͱ�����ˡ�
-��5����ͬ������޷�����localStorage��sessionStorage�е���Ϣ��
-unshift() ������������Ŀ�ͷ����һ�������Ԫ�أ��������µĳ��ȡ�
+语言语法 – 语法解析规则、关键字、语句、声明、运算符等。
+类型 – 布尔型、数字、字符串、对象等。
+原型和继承
+内建对象和函数的标准库 – JSON、Math、数组方法、对象自省方法等。
+Math.random（）；输出0-1之间的任意小数。
+Array 对象用于在单个的变量中存储多个值；在js-2的localStorage中要用到。
+用localStorage来存储数据的一些经验 
+localStorage存储方法
+localStorage.name = localStorage["name"]='vanida'；localStorage.setItem("name","vanida");//这三种设置值方式是一样的；
+localStorage获取值方法
+var name = localStorage["name"] = localStorage.name＝ localStorage.getItem("name");//这三种获取值方式是一样的；
+localStorage清值方法
+localStorage.removeItem("name");或者localStorage.name＝'';//清除name的值
+localStorage只能存储字符串，如果需要存储对象，首先要转化为字符串。利用JSON.stringify()；然后取出person的对象你可以用JSON.parse();
+本地存储外，除了localStorage，还有sessionStorage.
+（1）localStorage和sessionStorage都是用来存储客户端临时信息的对象。
+（2）localStorage和sessionStorage都只能存储字符串类型的对象
+（3）localStorage生命周期是永久，除非用户手动清除localStorage信息，否则这些信息将永远存在。
+（4）sessionStorage生命周期为当前窗口或标签页，一旦窗口或标签页被永久关闭了，那么通过sessionStorage中存储的数据也就被清空了。
+（5）不同浏览器无法共享localStorage或sessionStorage中的信息。
+unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。
 16-12-15
-�ͻ���ģ�� MVC���ĸ��� ���ݰ� ����ע��
-      �ͻ���ģ�� augular�У�ģ������ݶ��ᱻ���͵�������У�Ȼ���ڿͻ��˽���ת��
-      MVC���ĸ���ѹ������ݵĴ��루model����Ӧ���߼����루controller�������û�չʾ���ݵĴ��루view�������ط��뿪��AngularjsӦ���У���ͼ����Document Object Model ����������Javascript�࣬ģ�������򱻴洢�ڶ���������С�
-      ���ݰ� ���Զ���model��view֮�������ͬ����Angularʵ�����ݰ󶨵�?��ʽ�����������ǰ�model����������Ψ?һ���ŵ�������Դ��viewʼ����model��ͶӰ����model�����仯ʱ�����Զ���ӳ��view�ϡ�
-      ����ע����һ���������ģʽ���������������������ϵ������ע��ֻ�Ǽ򵥵Ļ�ȡ������Ҫ�Ķ�����������Ҫ������Щ�����������Ķ�����
-      ng-appָ�����AngularӦ�ù���ҳ���е���һ�顣
+客户端模板 MVC核心概念 数据绑定 依赖注入
+      客户端模板 augular中，模板和数据都会被发送到浏览器中，然后在客户端进行转配
+      MVC核心概念：把管理数据的代码（model）、应用逻辑代码（controller）、向用户展示数据的代码（view）清晰地分离开。Angularjs应用中：视图就是Document Object Model 控制器就是Javascript类，模型数据则被存储在对象的属性中。
+      数据绑定 可自动将model和view之间的数据同步。Angular实现数据绑定的?方式，可以让我们把model当作程序中唯?一可信的数据来源。view始终是model的投影。当model发生变化时，会自动反映到view上。
+      依赖注入是一种软件设计模式，用来处理代码的依赖关系。依赖注入只是简单的获取它所需要的东西，而不需要创建那些他们所依赖的东西。
+      ng-app指令告诉Angular应该管理页面中的哪一块。
 
-JavaScriptִ�����沢��һ��һ�еط�����ִ�г��򣬶���һ��һ�εط���ִ�еġ�
-���ң���ͬһ�γ���ķ���ִ���У�����ʽ�ĺ������ᱻ��ȡ��������ִ�С���������ִ
-����֮�󣬲Żᰴ˳��ִ�����������롣Ҳ����˵���ڵ�һ�ε���myfunc֮ǰ����һ����
-����䶨��Ĵ����߼����ѱ��ڶ�������������串���ˡ����ԣ����ζ����ö���ִ�����
-һ�������߼���һ�δ����еĶ���ʽ������������ִ�У����ƺ��е���̬���Եı��������ԣ���һ����Ҳ����Щ�˳�Ϊ��JavaScript�ġ�Ԥ���롱��
-JavaScript��Ĵ���Ҳ��һ�����ݣ�ͬ�����Ա����⸳ֵ���޸ĵģ�������ֵ���Ǵ�����߼���ֻ�ǣ���һ�����ݲ�ͬ���ǣ������ǿ��Ա�����ִ�еġ�
-�������Ƕ���ֻ������һ��Ķ������һ�����š�()�����������������������ִ
-�к������߼��������������������Ա����ã�һ�����ȴ�����Ա����á�
-����ͺ�������������һ�������������򷽷�����Ϊ�±������ʲ�������
-this��һ����������ò���������this�����������Է��ʵ�������� ��������Ժͷ�������ȴ���ܸ�this������ֵ����һ����������У�����������е�this����ʡ�Եģ���ԱĬ�϶������ǡ��Լ����ġ��� JavaScriptȴ��ͬ�����ڲ����ڡ����ҡ��������ʡ����������ʱ��this����ʡ�ԣ�
-    �漰���˶���Ľ���������ʹ����һ�ֱ���ΪJavaScript Object Notation(��дJSON)����ʽ������Ϊ���ľ��ǡ�JavaScript�����ʾ����
-    JSON����ʽ�����ô�����{}���Ű�����������Ŀ�б���ÿһ����Ŀ�䲢�ö��š�,���ָ���
-����Ŀ������ð�š�:���ָ���������������ֵ�����ǵ��͵��ֵ��ʾ��ʽ��Ҳ�ٴα�����
-JavaScript��Ķ�������ֵ�ṹ��
-    ��Ҫ��JSON�ַ������һ��JavaScript����ʱ��ֻ��Ҫʹ��eval�������ǿ�������ת�����棬�������ܵõ�һ�� JavaScript�ڴ������������JSON�����ּ����ص��������ʣ���ʹ������AJAX��̨��
-    ��JSON�⣬��JavaScript�����ǿ���ʹ��new���������һ����������ʽ����������
-�ϳ�Ϊ�貶�Ŀ�����ǡ�function MyFunc() {}; //����һ���պ���
-    var anObj = new MyFunc(); //ʹ��new������������MyFun�������ʹ�����һ������
-    �ڹ��캯����prototype�϶�����������Ժͷ��������ǿ���ͨ���乹��Ķ���ֱ�ӷ��ʺ͵��õġ�Ҳ������ô˵�� prototype�ṩ��һȺͬ����������Ժͷ����Ļ��ơ�
-��������ڸ�ԭ�Ͷ������Щ���Ժͷ�����һ�����캯��ԭ�Ͷ���Ҳ�����ڸ��ϲ㹹�캯��
-ԭ�Ͷ�����е����Ժͷ����������ڸ���ʵֻ���ڶ����Լ����ϴ������µ����Ժͷ�����ֻ
-������Щ���Ժͷ�����ԭ�Ͷ������Щͬ�����ѡ�JavaScript��������򵥵��ڸǻ���ʵ���˶���ġ���̬���ԣ��뾲̬�������Ե��麯��������(override)���ı���ϡ�
-      ��AJAX����Ѹ�ͷ�չ�Ľ��죬����ɹ���AJAX��Ŀ��JavaScript���пⶼ������չ�����ú�
-����prototype���ܡ�����΢���� ASP.NET AJAX���͸���Щ���ú�������prototype�����˴����������ԣ��Ӷ���ǿ��JavaScript�Ĺ��ܡ�
-      ��ν�ġ��հ����������ڹ��캯�����ڶ�������ĺ�����ΪĿ�����ķ����������������
-��ķ����������������������㺯�����е���ʱ��������ʹ��ֻҪĿ���������������ʼ
-���ܱ����䷽�������ܼ�ӱ���ԭ���캯���嵱ʱ�õ�����ʱ����ֵ�������ʼ�Ĺ��캯
-�������Ѿ���������ʱ����������Ҳ����ʧ�ˣ�����Ŀ�����ķ�����ȴʼ�������õ��ñ�
-����ֵ�����Ҹ�ֵֻ��ͨ���ַ��������ʡ���ʹ�ٴε�����ͬ�Ĺ��캯������ֻ�������¶�
-��ͷ������µ���ʱ����ֻ�Ƕ�Ӧ�µ�ֵ�����ϴ��Ǵε��õ��Ǹ��Զ����ġ���ȷ�����
+JavaScript执行引擎并非一行一行地分析和执行程序，而是一段一段地分析执行的。
+而且，在同一段程序的分析执行中，定义式的函数语句会被提取出来优先执行。函数定义执
+行完之后，才会按顺序执行其他语句代码。也就是说，在第一次调用myfunc之前，第一个函
+数语句定义的代码逻辑，已被第二个函数定义语句覆盖了。所以，两次都调用都是执行最后
+一个函数逻辑了一段代码中的定义式函数语句会优先执行，这似乎有点象静态语言的编译概念。所以，这一特征也被有些人称为：JavaScript的“预编译”。
+JavaScript里的代码也是一种数据，同样可以被任意赋值和修改的，而它的值就是代码的逻辑。只是，与一般数据不同的是，函数是可以被调用执行的。
+函数就是对象，只不过比一般的对象多了一个括号“()”操作符，这个操作符用来执
+行函数的逻辑。即，函数本身还可以被调用，一般对象却不可以被调用。
+对象和函数可以象数组一样，用属性名或方法名作为下标来访问并处理。
+this是一个特殊的内置参数，根据this参数，您可以访问到“这个” 对象的属性和方法，但却不能给this参数赋值。在一般对象语言中，方法体代码中的this可以省略的，成员默认都首先是“自己”的。但 JavaScript却不同，由于不存在“自我”，当访问“这个”对象时，this不可省略！
+    涉及到了对象的建立。我们使用了一种被称为JavaScript Object Notation(缩写JSON)的形式，翻译为中文就是“JavaScript对象表示法”
+    JSON的形式就是用大括“{}”号包括起来的项目列表，每一个项目间并用逗号“,”分隔，
+而项目就是用冒号“:”分隔的属性名和属性值。这是典型的字典表示形式，也再次表明了
+JavaScript里的对象就是字典结构。
+    需要将JSON字符串变成一个JavaScript对象时，只需要使用eval函数这个强大的数码转换引擎，就立即能得到一个 JavaScript内存对象。正是由于JSON的这种简单朴素的天生丽质，才使得她在AJAX舞台。
+    除JSON外，在JavaScript中我们可以使用new操作符结合一个函数的形式来创建对象。
+上成为璀璨夺目的明星。function MyFunc() {}; //定义一个空函数
+    var anObj = new MyFunc(); //使用new操作符，借助MyFun函数，就创建了一个对象。
+    在构造函数的prototype上定义的所有属性和方法，都是可以通过其构造的对象直接访问和调用的。也可以这么说， prototype提供了一群同类对象共享属性和方法的机制。
+对象可以掩盖原型对象的那些属性和方法，一个构造函数原型对象也可以掩盖上层构造函数
+原型对象既有的属性和方法。这种掩盖其实只是在对象自己身上创建了新的属性和方法，只
+不过这些属性和方法与原型对象的那些同名而已。JavaScript就是用这简单的掩盖机制实现了对象的“多态”性，与静态对象语言的虚函数和重载(override)概念不谋而合。
+      在AJAX技术迅猛发展的今天，许多成功的AJAX项目的JavaScript运行库都大量扩展了内置函
+数的prototype功能。比如微软的 ASP.NET AJAX，就给这些内置函数及其prototype添加了大量的新特性，从而增强了JavaScript的功能。
+      所谓的“闭包”，就是在构造函数体内定义另外的函数作为目标对象的方法函数，而这个对
+象的方法函数反过来引用外层外层函数体中的临时变量。这使得只要目标对象在生存期内始
+终能保持其方法，就能间接保持原构造函数体当时用到的临时变量值。尽管最开始的构造函
+数调用已经结束，临时变量的名称也都消失了，但在目标对象的方法内却始终能引用到该变
+量的值，而且该值只能通这种方法来访问。即使再次调用相同的构造函数，但只会生成新对
+象和方法，新的临时变量只是对应新的值，和上次那次调用的是各自独立的。的确很巧妙！
 
-��javascriptȨ��ָ�ϡ�����NodeJSʵս������angularȨ��ָ�ϡ�����ES6��׼���š�,�����ݽṹ�������㷨���ۡ�������ԭԭ�����ؿ����ܿ������Ƕ��١��ӻ����ıհ�ԭ����HTTPͨ�ŵ�MVC����ְ���Ű�������ǽ̡���ʱ�ŷ����������Լ�����ɵ��һ����һ·���������Լ�Ҳ����д���������Ĳ���ˣ�nodeJS�㲻�Ͼ�ͨ��дЩ�߼���̫���ӵ�ȫջ����Ҳ�����ˡ�
+《javascript权威指南》，《NodeJS实战》，《angular权威指南》，《ES6标准入门》,《数据结构》，《算法导论》，让我原原本本地看，能看多少是多少。从基本的闭包原理、HTTP通信到MVC框架手把手虐，不，是教。那时才发现曾经的自己跟个傻逼一样。一路走来现在自己也可以写交互动画的插件了，nodeJS算不上精通，写些逻辑不太复杂的全栈问题也不大了。
 
-���ߣ���ΰ
-���ӣ�https://www.zhihu.com/question/19923687/answer/131262624
-��Դ��֪��
-����Ȩ���������С���ҵת������ϵ���߻����Ȩ������ҵת����ע��������
+作者：张伟
+链接：https://www.zhihu.com/question/19923687/answer/131262624
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 12-20
-��Unexpected token d�������ȥҲû����JS�������»��ĺ�ɫ�����߳��֣��ǳ���֡�
- ����ȥ�ٶ���һ�·�������ΪJSON���������⡣������ԭ��һ�������ֳ������ڶ�������ΪJSON.parse()��ֻ�������飬����������ַ���д��ȥҲ�������������������Ǳ����е�d�ı�Ϊp���ѡ�
-���Ͻǣ�border-top-left-radius:100% /50%;��ʾ���Ͻ�ˮƽ����Բ��Ϊ100%����ֱ����Բ��Ϊ50%��
-#����Flex���ֵ�Ԫ�أ���ΪFlex������flex container�������"����"������������Ԫ���Զ���Ϊ������Ա����ΪFlex��Ŀ��flex item�������"��Ŀ"��
-����Ĭ�ϴ��������᣺ˮƽ�����ᣨmain axis���ʹ�ֱ�Ľ����ᣨcross axis��������Ŀ�ʼλ�ã���߿�Ľ���㣩����main start������λ�ý���main end��������Ŀ�ʼλ�ý���cross start������λ�ý���cross end��
-��ĿĬ�����������С�������Ŀռ�ݵ�����ռ����main size��ռ�ݵĽ�����ռ����cross size��
+“Unexpected token d”；点进去也没看到JS里面有下划的红色波浪线出现，非常奇怪。
+ 所以去百度了一下发现是因为JSON出现了问题。有两种原因一种是名字出错，第二种是因为JSON.parse()中只能是数组，但是如果把字符串写进去也会出现这种情况，不过是报错中的d改变为p而已。
+左上角，border-top-left-radius:100% /50%;表示左上角水平方向圆角为100%、垂直方向圆角为50%。
+#采用Flex布局的元素，称为Flex容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称"项目"。
+容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
+项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
 
 12-21
-CSS��д˳��
-1.λ������(position, top, right, z-index, display, float��)
-2.��С(width, height, padding, margin)
-3.����ϵ��(font, line-height, letter-spacing, color- text-align��)
-4.����(background, border��)
-5.����(animation, transition��)
+CSS书写顺序
+1.位置属性(position, top, right, z-index, display, float等)
+2.大小(width, height, padding, margin)
+3.文字系列(font, line-height, letter-spacing, color- text-align等)
+4.背景(background, border等)
+5.其他(animation, transition等)
 
-#.paddingֵ������ðٷֱȣ��Ǹ��ݸ����Ŀ��ȣ�֮ǰҲû��̫ע�⡣
+#.padding值如果设置百分比，是根据父级的宽度，之前也没有太注意。
 
-#.ʹ����display��flex���в���ʱ��һ�����Ȳ���������еȱ������š�����취�����ڸ�������flex-shrink��0��
-#�������д��ʽfont�������ϸ �����С/�и� ������ʽ
-#��������ķ�������һ�֣�after{content=".";display:table;clear:both;}  ���ڶ��֣���������һ��overflow��hidden����BFC���������
+#.使用了display：flex进行布局时，一旦宽度不够，会进行等比例缩放。解决办法——在父级设置flex-shrink：0；
+#字体的缩写样式font：字体粗细 字体大小/行高 字体样式
+#清除浮动的方法：第一种，after{content=".";display:table;clear:both;}  ；第二种：给父级加一个overflow：hidden触发BFC来清除浮动
 
-1.ʹ��margin��0 auto��һ���Ե�Ԫ�ر����ǿ鼶Ԫ�ء�
-2. ѧϰ���������display��inline-blockԪ��֮������Ŀ�϶
-    a.��ǰһ���Ľ�β��ǩ����һ����ʼ��ǩ����һ��
-    b.��Ԫ�صĿ�ʼ��ǩ�ͽ�����ǩ֮���ע��
-    c.ʹ��margin��ֵ
-    d.���� font-size��0 
-#Ajax��������JQ�����й���jq��Ajax��˵��������Ajax���˱ȽϿɹ۵���ʶ��
-            Ajax���ŵ㣺1.����Ҫ���֧��
-                        2.������û�����
-                        3.���web���������
-                        4.����������ʹ����ĸ���
-            Ajax��ȱ�㣺1.�������XMLHttpRequest�����֧�ֶȲ���
-                        2.�ƻ������ǰ���������ˡ���ť����������
-                        3.�����������֧�ֲ���
-                        4.�����͵��Թ��ߵĲ���
-�ջ񣺿�����һƪ��Ajax�ǳ���ϸ�����£�����һ�¡�
+1.使用margin：0 auto这一属性的元素必须是块级元素。
+2. 学习了如何消除display：inline-block元素之间产生的空隙
+    a.将前一个的结尾标签和下一个开始标签放在一起。
+    b.在元素的开始标签和结束标签之间加注释
+    c.使用margin负值
+    d.设置 font-size：0 
+#Ajax《锋利的JQ》中有关于jq与Ajax的说明，对了Ajax有了比较可观的认识。
+            Ajax的优点：1.不需要插件支持
+                        2.优秀的用户体验
+                        3.提高web程序的性能
+                        4.减轻服务器和带宽的负担
+            Ajax的缺点：1.浏览器对XMLHttpRequest对象的支持度不足
+                        2.破坏浏览器前进、“后退”按钮的正常功能
+                        3.对搜索引擎的支持不足
+                        4.开发和调试工具的不足
+收获：看到了一篇对Ajax非常详细的文章，分享一下。
       http://www.cnblogs.com/Garden-blog/archive/2011/03/11/1981778.html
 
-gitָ�
-*ÿ��Ҫ�������˺������½˵���ɹ���������Ҫ����
+git指令：
+*每次要求输入账号密码登陆说明成功，否则需要重试
 $ git remote add origin git@github.com:nigeriahu/testgit.git
 $ git push -u origin master
 $ git push origin master
 
-1.ʹ�ô�����
+1.使用代理：
 git config --global http.proxy http://xxx.xxx.xxx.xx:8080
-2.�����еĻ���http���ӣ�
+2.还不行的话用http连接：
 git remote add origin https://github.com/username/learngit.git
 git remote add origin https://github.com/nigeriahu/www.git
 git remote remove origin
 git remote add origin git@github.com:michaelliao/learngit.git
 $ git push origin master
 12-23
-jQurey���﷨
-     �����﷨��$(selector).action()
-     ��Ԫ���Ŷ���jQuery��ѡ������ҺͲ�ѯHTMLԪ�أ�actionִ�ж�Ԫ�صĲ�����
-     Ϊ�˷�ֹ�ĵ�����ȫ����ǰ������jQuery��������Ҫ��jQuery����һ��document ready�����
+jQurey的语法
+     基础语法：$(selector).action()
+     美元符号定义jQuery，选择符查找和查询HTML元素，action执行对元素的操作。
+     为了防止文档在完全加载前就运行jQuery，我们需要把jQuery放在一个document ready函数里。
 $(document).ready(                      
    function(){
-      ��ʼ����
+      开始代码
   }
 );
-���ߣ�
+或者：
 $(function(){
-    ��ʼ����
+    开始代码
 })
-ѡ������jQuery��������Ԫ����͵���Ԫ�ؽ��в���������ѡ��������$(�˴�дѡ����)��ͷ��
-jQueryѡ����������Ԫ����ѡȡԪ�ء�
-jQuery�¼���ҳ��Բ�ͬ�����ߵ���Ӧ�����¼���
-���� DOM �¼���
-����¼�	�����¼�	�����¼�	�ĵ�/�����¼�
+选择器：jQuery允许您对元素组和单个元素进行操作，所有选择器都以$(此处写选择器)开头。
+jQuery选择器：基于元素名选取元素。
+jQuery事件：页面对不同访问者的响应叫做事件。
+常见 DOM 事件：
+鼠标事件	键盘事件	表单事件	文档/窗口事件
 click	keypress	submit	load
 dblclick	keydown	change	resize
 mouseenter	keyup	focus	scroll
 mouseleave	
 blur	unload
-jQuery�¼����﷨��
-1.��ҳ����ָ��һ���¼���$(p").onclick( )
-2.��һ��ָ�������¼���ִ��ʲô����
+jQuery事件的语法：
+1.在页面中指定一个事件：$(p").onclick( )
+2.下一步指定触发事件后执行什么函数
 $("p").onclick(function(){
-�˴�дִ�еľ��庯��
+此处写执行的具体函数
 })
-jQuery��Ч����
-1.����/��ʾ  $("p") .hide();     $("p") .show();
-2.����/���� ��������speed��callback���ǿ�ѡ������speed��ֵ�����ǲ��Ҳ������slow��fast���ߺ��롣callback��fading��ɺ�ִ�еĺ���
-���룺$("div") .fadeIn(speed,callback)
-������$("div") .fadeOut(speed,callback)
-����/������$("div") .fadeToggle�������������ڵ���͵���֮���л�
-����Ϊ������͸���ȣ�$("div") .fadeTo(speed,opacity,callback);
-3.������
-���»�����$("div") .slideDown(speed,callback);
-���ϻ�����$("div") .slideUp(speed,callback);
-���ϡ����»����л���$("div") .slideToggle(speed,callback);
-4.������
+jQuery的效果：
+1.隐藏/显示  $("p") .hide();     $("p") .show();
+2.淡入/淡出 ——其中speed和callback都是可选参数，speed的值可以是不填，也可以是slow、fast或者毫秒。callback是fading完成后执行的函数
+淡入：$("div") .fadeIn(speed,callback)
+淡出：$("div") .fadeOut(speed,callback)
+淡入/淡出：$("div") .fadeToggle（）——可以在淡入和淡出之间切换
+渐变为给定的透明度：$("div") .fadeTo(speed,opacity,callback);
+3.滑动：
+向下滑动：$("div") .slideDown(speed,callback);
+向上滑动：$("div") .slideUp(speed,callback);
+向上、向下滑动切换：$("div") .slideToggle(speed,callback);
+4.动画：
 $("div") .animate(
-{css���ԣ�����ʹ�ö�����ԣ����磺ͬʱ���ÿ���}��speed,callback
+{css属性，可以使用多个属性，比如：同时设置宽高}，speed,callback
 );
-����ͬʱʹ�ö�����ԣ�����ʹ�����ֵ������ʹ��Ԥ����ֵ��ʹ�ö��й��ܡ�
-5.ֹͣ��������2����ѡ����
-$("div") .stop(stopAll��gotoEnd);�����˷��������ڶ�����Ч�����ǰֹͣ������
-stopAll��ʾ�Ƿ�����������У�gotoEnd��ʾ�Ƿ�������ɵ�ǰ����
-jQuery�ķ������ӣ�
+可以同时使用多个属性，可以使用相对值，可以使用预定义值，使用队列功能。
+5.停止动画：有2个可选参数
+$("div") .stop(stopAll，gotoEnd);——此方法用于在动画或效果完成前停止动作。
+stopAll表示是否清除动画队列，gotoEnd表示是否立即完成当前动画
+jQuery的方法链接：
 $("div").css("color","red").slideUp(200).slideDown(200);
 jQuery HTML
-1.��������
-$("div").text();�������û򷵻���ѡԪ�ص��ı�����
-$("div").html();�������û򷵻���ѡԪ�ص����ݣ�����html�ı�ǣ�
-$("div").val();�������û򷵻ر����ֶε�ֵ
-2. ����Ԫ�أ�$("<p></p>").text("I love jQuery");����ͨ��jQuery����Ԫ��
-��������$("div").attr(������������ֵ);
-�����µ�HTML���ݣ�
-append���������ڱ�ѡ��Ԫ�صĽ�β����������
-preappend���������ڱ�ѡ��Ԫ�صĿ�ʼ����������
-after���������ڱ�ѡ��Ԫ��֮�����������
-before���������ڱ�ѡ��Ԫ��֮ǰ����������
-3.ɾ��Ԫ�أ�
-$("div").remove()����ɾ����ѡԪ�ؼ���Ԫ��
-$("div").empty()����ɾ����ѡԪ�ص���Ԫ��
-ps��remove����.box����Ҳ�ɽ���ָ��һ����������д�����ڹ��ˣ�ֻɾ�������º���box��������Ԫ��
-4.jQuery��css������
+1.捕获内容
+$("div").text();——设置或返回所选元素的文本内容
+$("div").html();——设置或返回所选元素的内容（包括html的标记）
+$("div").val();——设置或返回表单字段的值
+2. 创建元素：$("<p></p>").text("I love jQuery");——通过jQuery创建元素
+设置属性$("div").attr(属性名，属性值);
+添加新的HTML内容：
+append（）——在被选中元素的结尾插入新内容
+preappend（）——在被选中元素的开始插入新内容
+after（）——在被选中元素之后插入新内容
+before（）——在被选中元素之前插入新内容
+3.删除元素：
+$("div").remove()——删除被选元素及子元素
+$("div").empty()——删除被选元素的子元素
+ps：remove（“.box”）也可接受指定一个参数，该写法用于过滤，只删除父级下含有box类名的子元素
+4.jQuery的css方法：
 $("div,p").addClass("blue");
 $("div,p").removeClass("blue");
-$("div,p").toggleClass("blue");���������Ӻ�ɾ��֮���л�
-css����������
-����css���ԣ�$("div").css("background-color":)���������׸�ƥ��Ԫ�صı�����ɫ
-����css���ԣ�$("div").css("background-color","yellow")������Ϊƥ�������Ԫ�ظ�����ɫ
-���ö��css���ԣ�$("div").css({"background":"red","color":"grey"})
-jQuery������
-jQuery���ȣ�
-.parent()������ѡԪ�ص�ֱ�Ӹ�Ԫ��
-.parents()������ѡԪ�ص���������Ԫ�أ��Ե���Ԫ��htmlΪֹ             .parent("li")������ѡԪ�ص���������Ԫ���е�liԪ��
-.parentsUntil("p")������ѡԪ�ص���������Ԫ��,ֱ��pԪ��Ϊֹ
-jQuery�����
-.children()������ѡ��Ԫ�ص�����ֱ����Ԫ��               .children(".box")�������ˣ�ѡ������Ϊbox��ֱ�Ӻ��Ԫ��
-.find()������ѡԪ�ص�������Ԫ�أ�ֱ�����һ�����            .find("*")����ѡȡ���еĺ��
-ˮƽ������
-.sibings()������ѡԪ�ص�����ͬ��Ԫ��
-.next()������ѡԪ�ص���һ��ͬ��Ԫ��
-.nextAll������ѡԪ�غ��������ͬ��
-.nextUntil("div")������ѡԪ�غ����ͬ��,ȡһ������
-ͬ����.pre()        .preAll()         .preUntil()
-�������ˣ�
-$("div").first()��������div�еĵ�һ����Ԫ��              $("div p").first()��������div�еĵ�һ����Ԫ��p
-$("div").last()��������div�е����һ����Ԫ��            �÷�ͬ��
-$("div").eq()��������div�д�����������Ԫ��              $("div").eq(1)
-.filter()�����������Լ��ƶ�һ����׼�����ϱ�׼�Ľ��������������ϱ�׼�Ľ���ɾ��
-.not()������filter���÷��պ��෴
+$("div,p").toggleClass("blue");——在添加和删除之间切换
+css（）方法：
+返回css属性：$("div").css("background-color":)——返回首个匹配元素的背景颜色
+设置css属性：$("div").css("background-color","yellow")——将为匹配的所有元素更换颜色
+设置多个css属性：$("div").css({"background":"red","color":"grey"})
+jQuery遍历：
+jQuery祖先：
+.parent()——被选元素的直接父元素
+.parents()——被选元素的所有祖先元素，自到根元素html为止             .parent("li")——被选元素的所有祖先元素中的li元素
+.parentsUntil("p")——被选元素的所有祖先元素,直到p元素为止
+jQuery后代：
+.children()——被选中元素的所有直接子元素               .children(".box")——过滤，选中类名为box的直接后代元素
+.find()——被选元素的所有子元素，直到最后一个后代            .find("*")——选取所有的后代
+水平遍历：
+.sibings()——被选元素的所有同胞元素
+.next()——被选元素的下一个同胞元素
+.nextAll——被选元素后面的所有同胞
+.nextUntil("div")——被选元素后面的同胞,取一个区间
+同理：.pre()        .preAll()         .preUntil()
+遍历过滤：
+$("div").first()——返回div中的第一个子元素              $("div p").first()——返回div中的第一个子元素p
+$("div").last()——返回div中的最后一个子元素            用法同上
+$("div").eq()——返回div中带有索引的子元素              $("div").eq(1)
+.filter()——允许您自己制定一个标准，符合标准的将被保留，不符合标准的将被删除
+.not()——与filter的用法刚好相反
