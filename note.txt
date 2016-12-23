@@ -251,4 +251,99 @@ git remote add origin https://github.com/username/learngit.git
 git remote add origin https://github.com/nigeriahu/www.git
 git remote remove origin
 git remote add origin git@github.com:michaelliao/learngit.git
-
+$ git push origin master
+12-23
+jQurey的语法
+     基础语法：$(selector).action()
+     美元符号定义jQuery，选择符查找和查询HTML元素，action执行对元素的操作。
+     为了防止文档在完全加载前就运行jQuery，我们需要把jQuery放在一个document ready函数里。
+$(document).ready(                      
+   function(){
+      开始代码
+  }
+);
+或者：
+$(function(){
+    开始代码
+})
+选择器：jQuery允许您对元素组和单个元素进行操作，所有选择器都以$(此处写选择器)开头。
+jQuery选择器：基于元素名选取元素。
+jQuery事件：页面对不同访问者的响应叫做事件。
+常见 DOM 事件：
+鼠标事件	键盘事件	表单事件	文档/窗口事件
+click	keypress	submit	load
+dblclick	keydown	change	resize
+mouseenter	keyup	focus	scroll
+mouseleave	
+blur	unload
+jQuery事件的语法：
+1.在页面中指定一个事件：$(p").onclick( )
+2.下一步指定触发事件后执行什么函数
+$("p").onclick(function(){
+此处写执行的具体函数
+})
+jQuery的效果：
+1.隐藏/显示  $("p") .hide();     $("p") .show();
+2.淡入/淡出 ——其中speed和callback都是可选参数，speed的值可以是不填，也可以是slow、fast或者毫秒。callback是fading完成后执行的函数
+淡入：$("div") .fadeIn(speed,callback)
+淡出：$("div") .fadeOut(speed,callback)
+淡入/淡出：$("div") .fadeToggle（）——可以在淡入和淡出之间切换
+渐变为给定的透明度：$("div") .fadeTo(speed,opacity,callback);
+3.滑动：
+向下滑动：$("div") .slideDown(speed,callback);
+向上滑动：$("div") .slideUp(speed,callback);
+向上、向下滑动切换：$("div") .slideToggle(speed,callback);
+4.动画：
+$("div") .animate(
+{css属性，可以使用多个属性，比如：同时设置宽高}，speed,callback
+);
+可以同时使用多个属性，可以使用相对值，可以使用预定义值，使用队列功能。
+5.停止动画：有2个可选参数
+$("div") .stop(stopAll，gotoEnd);——此方法用于在动画或效果完成前停止动作。
+stopAll表示是否清除动画队列，gotoEnd表示是否立即完成当前动画
+jQuery的方法链接：
+$("div").css("color","red").slideUp(200).slideDown(200);
+jQuery HTML
+1.捕获内容
+$("div").text();——设置或返回所选元素的文本内容
+$("div").html();——设置或返回所选元素的内容（包括html的标记）
+$("div").val();——设置或返回表单字段的值
+2. 创建元素：$("<p></p>").text("I love jQuery");——通过jQuery创建元素
+设置属性$("div").attr(属性名，属性值);
+添加新的HTML内容：
+append（）——在被选中元素的结尾插入新内容
+preappend（）——在被选中元素的开始插入新内容
+after（）——在被选中元素之后插入新内容
+before（）——在被选中元素之前插入新内容
+3.删除元素：
+$("div").remove()——删除被选元素及子元素
+$("div").empty()——删除被选元素的子元素
+ps：remove（“.box”）也可接受指定一个参数，该写法用于过滤，只删除父级下含有box类名的子元素
+4.jQuery的css方法：
+$("div,p").addClass("blue");
+$("div,p").removeClass("blue");
+$("div,p").toggleClass("blue");——在添加和删除之间切换
+css（）方法：
+返回css属性：$("div").css("background-color":)——返回首个匹配元素的背景颜色
+设置css属性：$("div").css("background-color","yellow")——将为匹配的所有元素更换颜色
+设置多个css属性：$("div").css({"background":"red","color":"grey"})
+jQuery遍历：
+jQuery祖先：
+.parent()——被选元素的直接父元素
+.parents()——被选元素的所有祖先元素，自到根元素html为止             .parent("li")——被选元素的所有祖先元素中的li元素
+.parentsUntil("p")——被选元素的所有祖先元素,直到p元素为止
+jQuery后代：
+.children()——被选中元素的所有直接子元素               .children(".box")——过滤，选中类名为box的直接后代元素
+.find()——被选元素的所有子元素，直到最后一个后代            .find("*")——选取所有的后代
+水平遍历：
+.sibings()——被选元素的所有同胞元素
+.next()——被选元素的下一个同胞元素
+.nextAll——被选元素后面的所有同胞
+.nextUntil("div")——被选元素后面的同胞,取一个区间
+同理：.pre()        .preAll()         .preUntil()
+遍历过滤：
+$("div").first()——返回div中的第一个子元素              $("div p").first()——返回div中的第一个子元素p
+$("div").last()——返回div中的最后一个子元素            用法同上
+$("div").eq()——返回div中带有索引的子元素              $("div").eq(1)
+.filter()——允许您自己制定一个标准，符合标准的将被保留，不符合标准的将被删除
+.not()——与filter的用法刚好相反

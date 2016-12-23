@@ -98,6 +98,10 @@ function addItem(){
     allArr = JSON.stringify(all);//把all的字符串存在 allArr里面
     sessionStorage.all = allArr;//存入缓存里面
     console.log(localStorage);
+    var day=1;
+    dayString=JSON.stringify(day);
+    localStorage.day=dayString;
+    console.log(localStorage);
 //之后的读取时这样的  allArr = sessionStorage.all ; all = JSON.parse(allArr);
 }
 //创建一个按钮事件
