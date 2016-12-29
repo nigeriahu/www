@@ -129,3 +129,17 @@ $('#check').on('click',function () {
         location.href='js4-2.html';
     }
 })
+
+voteNS=JSON.stringify(voteN);
+localStorage.vote=voteNS;
+
+var j;
+var DeadNum = [];//挑出已死的玩家存入数组
+for(j = 0;j < total.length;j ++){
+    if(total[j].status == "dead" || total[j].status == "vote"){
+        DeadNum.push(total[j]);
+    }
+}
+console.log(DeadNum);
+var DeadNumStr = JSON.stringify(DeadNum);//已死玩家存入本地
+localStorage.deadnum = DeadNumStr;
