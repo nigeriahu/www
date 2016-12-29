@@ -5,7 +5,7 @@ console.log(localStorage);
 // 读取localStorage内的内容
 //第一步是调取出上个页面保存的数
 
- allArr = sessionStorage.all;
+ allArr = localStorage.all;
  all = JSON.parse(allArr);
 console.log(all);
 var clickNum = 0;
@@ -54,7 +54,7 @@ function odd(){
 }
 
 allArr = JSON.stringify(all);//把all的字符串存在 allArr里面
-sessionStorage.all = allArr;//存入缓存里面
+localStorage.all = allArr;//存入缓存里面
 
 /*var a=1;
 function checkId() {

@@ -1,45 +1,39 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript">
-        function getInnerHTML()
-        {
-            alert(document.getElementById("tr1").innerHTML);
-        }
-        function updateTextInput(val) {
-            document.getElementById('textInput').value=val;
-        }
-    </script>
-    <style>
-        .main-left span{
-            width: 0;
-            height: 0;
-            border-top: 1rem solid transparent;
-            border-bottom: 1rem solid transparent;
-            border-right: 1.5rem solid #24a7c6;
-        }
-    </style>
+    <meta name="description" content="iMagic">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
 </head>
 <body>
+<h2>点击以下三个li，输出分别是什么？</h2>
+<ul>
+    <li>Item 0</li>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+<script>
 
-<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-<input type="text" id="textInput" value="">
+    var lis = document.getElementsByTagName('li');
 
-<table border="1">
-    <tr id="tr1">
-        <th>Firstname</th>
-        <th>Lastname</th>
-    </tr>
-    <tr id="tr2">
-        <td>Peter</td>
-        <td>Griffin</td>
-    </tr>
-</table>
-<br />
-<input type="button" onclick="getInnerHTML()"
-       value="Alert innerHTML of table row" />
+    for (var i = 0; i < lis.length; i++) {
 
-<div class="main-left"><span></span></div>
+        lis[i].onclick = (function (invokedi) {
+            console.log('现在建立对于Item' + invokedi + '的event handler');
+            return function uniqEventHandlerFori(event){
+                console.log(
+                        'invokedi是在建立event handler时传入的，它的值是' +
+                        invokedi);
+                console.log('你点击了 ' + invokedi);
+            }
+        }(i))
+
+    }
 
 
+
+</script>
 </body>
 </html>
+

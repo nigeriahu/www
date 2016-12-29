@@ -2,7 +2,7 @@
  * Created by michael on 2016/12/23.
  */
 
-    // 读取本地缓存中的数组；展示被杀死人的数据
+// 读取本地缓存中的数组；展示被杀死人的数据
 console.log(localStorage);
 allArr=localStorage.all;
 all=JSON.parse(allArr);
@@ -17,7 +17,7 @@ day=JSON.parse(dayString);
 var voteN;
 
 if (localStorage.all) {
-    allArr = localStorage.all;
+    allArr = sessionStorage.all;
     all = JSON.parse(allArr);
 }
 if (localStorage.kill) {
@@ -29,15 +29,13 @@ if (localStorage.vote) {
     voteN=JSON.parse(voteString);
 }
 
-for (var i = 0; i < day*2; i++) {
+for (var i = 0; i < day; i++) {
     var output=$('#result');
-    var idle=$('#idle');
-    idle.children("img").attr("src", "img-true.png");
-    ali='<p>'+total[KillN[i]].num+'号被杀手杀死了，真实身份是'+total[KillN[i]].job+'</p>';
+    ali='<p>'+(total[KillN[i]].num)+'号被杀手杀死了，真实身份是'+total[KillN[i]].job+'</p>';
     output.append(ali);
     if (voteN!==undefined&&voteN.length>i) {
-        idle.children("img").attr("src", "JS_vote.png");
-        oli='<p>'+(total[voteN[i]].num+1)+'号被集体投死了，真实身份是'+total[voteN[i]].job+'</p>';
+
+        oli='<p>'+(total[voteN[i]].num+1)+'号被集体投死了，真实身份是'+total[voteN[i]].id+'</p>';
         output.append(oli);
     }
 }
@@ -47,3 +45,6 @@ $('.footer button').on('click',function () {
 
 })
 
+/**
+ * Created by michael on 2016/12/28.
+ */

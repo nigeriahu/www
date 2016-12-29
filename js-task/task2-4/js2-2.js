@@ -24,18 +24,6 @@ function set(){
     else if(text<6||text>18){
         alert("请输入6-18间的数字");
     }
-    //判断杀手数
-    /*else if(text < 8){
-        nKillerNum = 1;
-    }else if(text < 12){
-        nKillerNum = 2;
-    }else if(text < 16){
-        nKillerNum = 3;
-    }else if(text < 19){
-        nKillerNum = 4;
-    }else if(text < 21){
-        nKillerNum = 5;
-    }*/
     addItem();
     console.log(text);//此处text为arguments？
 
@@ -43,43 +31,16 @@ function set(){
 }
 
 //方法一 将人物添加到列表中
-/*function setItems(n){
-    var nodes=items.childNodes;
-    var m=nodes.length;
-    for(var i=0; i<m; i++){
-        items.removeChild(nodes[0]);
-    }
-    for(var i=0; i<n; i++){
-        addItem();
-        console.log(nodes);
-        console.log("nodes:"+nodes);
-        console.log(m);
-        console.log("m:"+m);
-    }
-}*/
 
 //创建人物
 function addItem(){
-    /*var job=["杀&nbsp;手","水&nbsp;民"];
-    var cols=["#ee9f1b","#29bde0",];
-    var num=Math.floor(Math.random()*2);
-    var block=document.createElement("i");
-    block.style.cssText="display:inline-block; width:10px; height:10px; background-color:"+cols[num]+"; position:relative; top:-3px;";
-    var item=document.createElement("span");
-    item.innerHTML=job[num]+"1人";
-    item.style.cssText="font-size:1rem;margin-left:0.5rem;";
-    var box=document.createElement("div");
-    box.style.cssText="width: 10rem; height:3rem; float:left; margin:1rem 0 0 2rem; color:#ccc";
-    box.appendChild(block);
-    box.appendChild(item);
-    items.appendChild(box);*/
     var all = [];
     var killNumber;
     var allNumber=document.getElementById("num").value;
     var n;
     var i;
     var detail="" ;
-    killNumber =   Math.floor(allNumber / 4);
+    killNumber = Math.floor(allNumber / 4);
     if (allNumber == 8){
         killNumber = 1 ;
     }for (n =0 ;n<killNumber;n++ ){
@@ -96,12 +57,14 @@ function addItem(){
     }
     console.log(all);
     allArr = JSON.stringify(all);//把all的字符串存在 allArr里面
-    sessionStorage.all = allArr;//存入缓存里面
+    localStorage.all = allArr;//存入缓存里面
     console.log(localStorage);
+
     var day=1;
     dayString=JSON.stringify(day);
     localStorage.day=dayString;
     console.log(localStorage);
+
 //之后的读取时这样的  allArr = sessionStorage.all ; all = JSON.parse(allArr);
 }
 //创建一个按钮事件
