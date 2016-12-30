@@ -89,7 +89,7 @@ body{
     background-color: #29bde0;
     border-top: 1px white solid;
 }
-.footer button{
+.footer input{
     width: 75%;
     border: none;
     color:white;
