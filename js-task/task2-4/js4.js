@@ -87,20 +87,6 @@ for (var i = 0; i < all.length; i++) {
         box.eq(i).css('border','3px solid red').addClass('die');
     }
 }
-// 判断玩家有没有点击或有没有点击到死亡玩家
-console.log(total)
-box.on('click',function () {
-    if ($(this).hasClass('die')) {
-        alert('什么鬼啦，选择一个非死亡玩家~');
-        click=undefined;
-        console.log(click);
-    }else{
-        $(this).css('border','3px solid red').siblings().css('border','3px solid #fff');
-        $('.die').css('border','3px solid red');
-        click=$(this).index();
-        console.log(click);
-    }
-})
 
 $('#check').on('click',function () {
 

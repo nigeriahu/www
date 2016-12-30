@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce9c5a8-62c8-4406-8246-362ffcf0708f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js-task/task2-4/js4.html" afterPath="$PROJECT_DIR$/js-task/task2-4/js4.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js-task/task2-4/js4.js" afterPath="$PROJECT_DIR$/js-task/task2-4/js4.js" />
     </list>
     <ignored path="testgit.iws" />
@@ -26,16 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="js2-2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-task/task2-4/js2-2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="js4-1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4-1.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js4-vote.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="js4-vote.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4-vote.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="714">
               <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
               <folding />
             </state>
@@ -105,11 +96,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="js4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="js4.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2772">
-              <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+            <state relative-caret-position="840">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,7 +164,6 @@
         <option value="$PROJECT_DIR$/js-task/task2-4/js4-1.js" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js4.css" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js2-2.html" />
-        <option value="$PROJECT_DIR$/js-task/task2-4/js4.html" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js4-3.js" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js4-3.html" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js3-1.js" />
@@ -175,8 +175,9 @@
         <option value="$PROJECT_DIR$/js-task/task2-4/js4-vote.html" />
         <option value="$PROJECT_DIR$/js-task/task2-4/demo.html" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js4-vote.js" />
-        <option value="$PROJECT_DIR$/js-task/task2-4/js4.js" />
         <option value="$PROJECT_DIR$/js-task/task2-4/js4-2.js" />
+        <option value="$PROJECT_DIR$/js-task/task2-4/js4.js" />
+        <option value="$PROJECT_DIR$/js-task/task2-4/js4.html" />
       </list>
     </option>
   </component>
@@ -350,7 +351,7 @@
       <workItem from="1474594984330" duration="611000" />
       <workItem from="1482304423979" duration="43853000" />
       <workItem from="1482712707567" duration="16855000" />
-      <workItem from="1482886636754" duration="44710000" />
+      <workItem from="1482886636754" duration="45582000" />
     </task>
     <task id="LOCAL-00001" summary="12-21">
       <created>1482304847437</created>
@@ -429,11 +430,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482999809527</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="12-29">
+      <created>1483006490615</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1483006490615</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106029000" />
+    <option name="totallyTimeSpent" value="106901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,14 +743,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-task/task2-4/js2-2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -829,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4-2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42">
@@ -849,8 +841,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4-vote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="714">
           <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-task/task2-4/js4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
           <folding />
         </state>
       </provider>
