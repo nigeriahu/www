@@ -38,7 +38,7 @@ var main=$('#box');
 for(i=0;i<all.length;i++){
     var player=document.createElement('div');
     player.className='box-top';
-    player.innerHTML ="<p id='judge-name'>"+ "<img src='putao.png'>"+all[i]+"</p> <span>"+(i+1)+"</span>";
+    player.innerHTML ="<p class='judge-name'>"+ "<img src='putao.png'>"+all[i]+"</p> <span>"+(i+1)+"</span>";
     main.append(player);
     if (localStorage.total) {
         if (total[i].status=='dead') {
@@ -59,10 +59,10 @@ for(i=0;i<all.length;i++){
 // 标记死亡角色
 
 var box=$('.box-top');
-var judge= $('#judge-name');
+
 box.on('click',function () {
     // 点击边框换色
-    if ($(this).find('#judge-name').html()=='杀手') {
+    if ($(this).find('.judge-name').html()=='<img src="putao.png">杀手') {
         alert('为何要手足相残啊，少年！？杀手不能杀死杀手！');
         click=undefined;
         box.css('border','3px solid #fff')
